@@ -15,7 +15,7 @@
 
  BEGIN_JUCE_MODULE_DECLARATION
 
-  ID:                   gin_gui
+  ID:                   gin_graphics
   vendor:               Roland Rabien
   version:              1.0.0
   name:                 Gin
@@ -24,7 +24,7 @@
   license:              BSD
   minimumCppStandard:   17
 
-  dependencies:         juce_core juce_graphics juce_events juce_gui_basics juce_gui_extra gin
+  dependencies:         juce_core juce_graphics gin
   OSXFrameworks:        Security
 
  END_JUCE_MODULE_DECLARATION
@@ -34,7 +34,7 @@
 
 #pragma once
 
-#ifndef JUCE_MODULE_AVAILABLE_gin_gui
+#ifndef JUCE_MODULE_AVAILABLE_gin_graphics
  /* If you fail to make sure that all your compile units are building JUCE with the same set of
     option flags, then there's a risk that different compile units will treat the classes as having
     different memory layouts, leading to very nasty memory corruption errors when they all get
@@ -55,8 +55,7 @@
 
 //==============================================================================
 #include <juce_core/juce_core.h>
-#include <juce_gui_basics/juce_gui_basics.h>
-#include <juce_gui_extra/juce_gui_extra.h>
+#include <juce_graphics/juce_graphics.h>
 #include <gin/gin.h>
 
 #include <map>
@@ -64,20 +63,8 @@
 
 namespace gin
 {
-#include "utilities/gin_asyncutilities.h"
-#include "utilities/gin_coalescedtimer.h"
-#include "utilities/gin_util.h"
-#include "utilities/gin_openstreetmaps.h"
-#include "utilities/gin_elevatedfilecopy.h"
-#include "utilities/gin_layout.h"
+#include "formats/gin_bmpimageformat.h"
+#include "formats/gin_webpimageformat.h"
 
-#include "images/gin_imageutilities.h"
-
-#include "components/gin_componentutils.h"
-#include "components/gin_componentviewer.h"
-#include "components/gin_ginlookandfeel.h"
-#include "components/gin_mapviewer.h"
-#include "components/gin_propertycomponents.h"
-#include "components/gin_singlelinetexteditor.h"
-
+#include "images/gin_imageeffects.h"
 }

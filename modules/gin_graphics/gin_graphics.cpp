@@ -26,7 +26,12 @@
  #pragma warning (disable: 4244)
 #endif
 
-#include "gin_gui.h"
+#include "gin_graphics.h"
+
+#include "3rdparty/avir/avir.h"
+#if JUCE_INTEL
+ #include "3rdparty/avir/avir_float4_sse.h"
+#endif
 
 #if __clang__
  #pragma clang diagnostic pop
@@ -51,18 +56,10 @@
 
 namespace gin
 {
+#include "formats/gin_bmpimageformat.cpp"
+#include "formats/gin_webpimageformat.cpp"
 
-#include "utilities/gin_asyncutilities.cpp"
-#include "utilities/gin_openstreetmaps.cpp"
-#include "utilities/gin_elevatedfilecopy.cpp"
-#include "utilities/gin_layout.cpp"
-
-#include "images/gin_imageutilities.cpp"
-
-#include "components/gin_componentviewer.cpp"
-#include "components/gin_ginlookandfeel.cpp"
-#include "components/gin_mapviewer.cpp"
-#include "components/gin_propertycomponents.cpp"
-#include "components/gin_singlelinetexteditor.cpp"
-
+#include "images/gin_imageeffects.cpp"
+#include "images/gin_imageeffects_blending.cpp"
+#include "images/gin_imageeffects_stackblur.cpp"
 }

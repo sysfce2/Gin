@@ -1,0 +1,7 @@
+#include "3rdparty/webp/dsp/alpha_processing_sse41.c"
+#include "3rdparty/webp/dsp/dec_sse41.c"
+#include "3rdparty/webp/dsp/enc_sse41.c"
+#include "3rdparty/webp/dsp/lossless_enc_sse41.c"
+#include "3rdparty/webp/dsp/lossless_sse41.c"
+#include "3rdparty/webp/dsp/upsampling_sse41.c"
+#include "3rdparty/webp/dsp/yuv_sse41.c"
