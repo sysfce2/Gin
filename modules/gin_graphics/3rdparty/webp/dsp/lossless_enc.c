@@ -530,9 +530,9 @@ void VP8LSubtractGreenFromBlueAndRed_C(uint32_t* argb_data, int num_pixels) {
   }
 }
 
-//static WEBP_INLINE int ColorTransformDelta(int8_t color_pred, int8_t color) {
-//  return ((int)color_pred * color) >> 5;
-//}
+static WEBP_INLINE int ColorTransformDelta(int8_t color_pred, int8_t color) {
+  return ((int)color_pred * color) >> 5;
+}
 
 static WEBP_INLINE int8_t U32ToS8(uint32_t v) {
   return (int8_t)(v & 0xff);

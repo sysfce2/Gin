@@ -17,9 +17,9 @@
 #include "../dsp/dsp.h"
 #include "../enc/vp8i_enc.h"
 
-//static WEBP_INLINE uint8_t clip_8b(int v) {
-//  return (!(v & ~0xff)) ? v : (v < 0) ? 0 : 255;
-//}
+static WEBP_INLINE uint8_t clip_8b(int v) {
+  return (!(v & ~0xff)) ? v : (v < 0) ? 0 : 255;
+}
 
 #if !WEBP_NEON_OMIT_C_CODE
 static WEBP_INLINE int clip_max(int v, int max) {
@@ -84,7 +84,7 @@ static void CollectHistogram_C(const uint8_t* ref, const uint8_t* pred,
 //------------------------------------------------------------------------------
 // run-time tables (~4k)
 
-static uint8_t clip11[255 + 510 + 1];    // clips [-255,510] to [0,255]
+static uint8_t clip1[255 + 510 + 1];    // clips [-255,510] to [0,255]
 
 // We declare this variable 'volatile' to prevent instruction reordering
 // and make sure it's set to true _last_ (so as to be thread-safe)
@@ -94,7 +94,7 @@ static WEBP_TSAN_IGNORE_FUNCTION void InitTables(void) {
   if (!tables_ok) {
     int i;
     for (i = -255; i <= 255 + 255; ++i) {
-        clip11[255 + i] = clip_8b(i);
+      clip1[255 + i] = clip_8b(i);
     }
     tables_ok = 1;
   }
@@ -262,7 +262,7 @@ static WEBP_INLINE void TrueMotion(uint8_t* dst, const uint8_t* left,
   int y;
   if (left != NULL) {
     if (top != NULL) {
-      const uint8_t* const clip = clip11 + 255 - left[-1];
+      const uint8_t* const clip = clip1 + 255 - left[-1];
       for (y = 0; y < size; ++y) {
         const uint8_t* const clip_table = clip + left[y];
         int x;
@@ -501,7 +501,7 @@ static void HD4(uint8_t* dst, const uint8_t* top) {
 
 static void TM4(uint8_t* dst, const uint8_t* top) {
   int x, y;
-  const uint8_t* const clip = clip11 + 255 - top[-1];
+  const uint8_t* const clip = clip1 + 255 - top[-1];
   for (y = 0; y < 4; ++y) {
     const uint8_t* const clip_table = clip + top[-2 - y];
     for (x = 0; x < 4; ++x) {
