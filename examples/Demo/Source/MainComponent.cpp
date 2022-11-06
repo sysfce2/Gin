@@ -1010,13 +1010,15 @@ struct WebpImageDemo : public juce::Component
             juce::MemoryBlock mb (BinaryData::_1_webp, BinaryData::_1_webpSize);
             juce::MemoryInputStream is (mb, false);
 
-            source1 = webp.decodeImage (is);
+            if (webp.canUnderstand (is))
+                source1 = webp.decodeImage (is);
         }
         {
             juce::MemoryBlock mb (BinaryData::_2_webp, BinaryData::_2_webpSize);
             juce::MemoryInputStream is (mb, false);
 
-            source2 = webp.decodeImage (is);
+            if (webp.canUnderstand (is))
+                source2 = webp.decodeImage (is);
         }
     }
 
