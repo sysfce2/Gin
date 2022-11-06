@@ -14,7 +14,6 @@
 #include "3rdparty/webp/dsp/enc_neon.c"
 #include "3rdparty/webp/dsp/filters_mips_dsp_r2.c"
 #include "3rdparty/webp/dsp/alpha_processing.c"
-#include "3rdparty/webp/dsp/dec_neon.c"
 #include "3rdparty/webp/dsp/cost_sse2.c"
 #include "3rdparty/webp/enc/webp_enc.c"
 #include "3rdparty/webp/dsp/alpha_processing_neon.c"

@@ -998,6 +998,44 @@ struct BmpImageDemo : public juce::Component
 };
 
 //==============================================================================
+struct WebpImageDemo : public juce::Component
+{
+    WebpImageDemo()
+    {
+        setName ("Webp Image");
+
+        gin::WEBPImageFormat webp;
+
+        {
+            juce::MemoryBlock mb (BinaryData::_1_webp, BinaryData::_1_webpSize);
+            juce::MemoryInputStream is (mb, false);
+
+            source1 = webp.decodeImage (is);
+        }
+        {
+            juce::MemoryBlock mb (BinaryData::_2_webp, BinaryData::_2_webpSize);
+            juce::MemoryInputStream is (mb, false);
+
+            source2 = webp.decodeImage (is);
+        }
+    }
+
+    void paint (juce::Graphics& g) override
+    {
+        auto rc = getLocalBounds();
+
+        g.fillAll (juce::Colours::black);
+        if (source1.isValid())
+            g.drawImage (source1, rc.removeFromLeft (rc.getWidth() / 2).toFloat(), juce::RectanglePlacement::centred);
+        if (source2.isValid())
+            g.drawImage (source2, rc.toFloat(), juce::RectanglePlacement::centred);
+    }
+
+    juce::Image source1, source2;
+};
+
+
+//==============================================================================
 struct ImageEffectsDemo : public juce::Component,
                           private juce::Slider::Listener
 {
@@ -1493,6 +1531,7 @@ MainContentComponent::MainContentComponent()
    #endif
     demoComponents.add (new MetadataDemo());
     demoComponents.add (new BmpImageDemo());
+    demoComponents.add (new WebpImageDemo());
     demoComponents.add (new MapDemo());
     //demoComponents.add (new SemaphoreDemo());
     demoComponents.add (new SharedMemoryDemo());
