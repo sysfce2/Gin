@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['waituntilready_2402',['waitUntilReady',['../classSecureStreamingSocket.html#ae5b14633c70b66812ea2647905ef78f2',1,'SecureStreamingSocket']]],
-  ['watchparam_2403',['watchParam',['../classMultiParamComponent.html#ac49a40f9a9abf19917dd3dc1b40bf5f8',1,'MultiParamComponent']]],
-  ['waveformcomponent_2404',['WaveformComponent',['../classWaveformComponent.html#a5ea719fe0ab7464f7411fb5ec4eb5d4b',1,'WaveformComponent']]],
-  ['wetdrymix_2405',['WetDryMix',['../classWetDryMix.html#a31c06ff0212820a3b2b93571ef54127c',1,'WetDryMix']]],
-  ['write_2406',['write',['../classAudioFifo.html#a272a4efa8416e0c57905329552781855',1,'AudioFifo::write(const juce::AudioSampleBuffer &amp;src, int numSamples=-1)'],['../classAudioFifo.html#a7dbba1b96c2670e3e046f2ad83e3ed40',1,'AudioFifo::write(const float *const *data, int numSamples)'],['../classDelayLine.html#ae83573274b47e182d7293edd582ae2f3',1,'DelayLine::write()'],['../classMidiFifo.html#a90ece40a2c61b1bba7de907838fc7cf6',1,'MidiFifo::write()'],['../classSecureStreamingSocket.html#ae04b0755561c2b33d447a43712c16c0f',1,'SecureStreamingSocket::write()']]],
-  ['writefinished_2407',['writeFinished',['../classDelayLine.html#ab36052a31da09d3a8162651ba437bec6',1,'DelayLine']]],
-  ['writeimagetostream_2408',['writeImageToStream',['../classBMPImageFormat.html#a7aa7a97cf8a3e5724bc61550ce7c8881',1,'BMPImageFormat::writeImageToStream()'],['../classWEBPImageFormat.html#a7323d308a2ed305d577d7630cfafc0b8',1,'WEBPImageFormat::writeImageToStream()']]],
-  ['writemono_2409',['writeMono',['../classAudioFifo.html#a8a2f35a383ee1e3074491dfc6f510e59',1,'AudioFifo']]],
-  ['wtoscillator_2410',['WTOscillator',['../classWTOscillator.html#a16fdc8afe3d72d02755d37bb13aa3dad',1,'WTOscillator']]],
-  ['wtvoicedstereooscillator_2411',['WTVoicedStereoOscillator',['../classWTVoicedStereoOscillator.html#a8db7ce7f1c1f034e9f3d38119ed1325d',1,'WTVoicedStereoOscillator']]]
+  ['valuechanged_0',['valuechanged',['../classPropertyComponentBase.html#af34efe7a5ff3eb5199e3f06fce52b6ff',1,'PropertyComponentBase::valueChanged()'],['../classStandalonePluginHolder.html#ae32dbcb03aab84bb602af0148457f7b4',1,'StandalonePluginHolder::valueChanged()']]],
+  ['valuetreefromjson_1',['valueTreeFromJSON',['../group__gin-utilities.html#ga88f482bf81fb3e423fa1e3926dfaa9a6',1,'gin_valuetreeutilities.h']]],
+  ['valuetreeobject_2',['ValueTreeObject',['../classValueTreeObject.html#a50b6f4eead4ccc3a50257763f178eb47',1,'ValueTreeObject']]],
+  ['valuetreetojson_3',['valueTreeToJSON',['../group__gin-utilities.html#gac8809f5a07d326dc76f18d09bd99db9d',1,'gin_valuetreeutilities.h']]],
+  ['valueupdated_4',['valueupdated',['../classMultiParamComponent.html#a5ea4449b0c06e5f5ed1acda230357b23',1,'MultiParamComponent::valueUpdated()'],['../classPluginButton.html#aa764a81b1678f58f8034b9df753c8b77',1,'PluginButton::valueUpdated()'],['../classSVGPluginButton.html#ad316678aa21285135926fc5146be78f0',1,'SVGPluginButton::valueUpdated()'],['../classPluginComboBox.html#a3974da62403031912ad0c232dafbf8dc',1,'PluginComboBox::valueUpdated()'],['../classPluginSlider.html#af47461ce84833d9e5ab38b459c42c494',1,'PluginSlider::valueUpdated()'],['../classParameter_1_1ParameterListener.html#aeb8d451cc143b571fbf0edffc8e47266',1,'Parameter::ParameterListener::valueUpdated()']]],
+  ['velocitytogain_5',['velocityToGain',['../group__gin__dsp-dsp.html#gaeda2ea585490695813285661264a92b9',1,'gin_audioutil.h']]],
+  ['versionstringtoint_6',['versionStringToInt',['../group__gin-utilities.html#ga9861500c17d0717e211dc67c84ccc261',1,'gin_util.h']]],
+  ['voicedstereooscillator_7',['VoicedStereoOscillator',['../classVoicedStereoOscillator.html#ae1e1c0b5a20b75ea44af638022b879be',1,'VoicedStereoOscillator']]]
 ];

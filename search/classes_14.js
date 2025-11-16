@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['waveformcomponent_1501',['WaveformComponent',['../classWaveformComponent.html',1,'']]],
-  ['webpimageformat_1502',['WEBPImageFormat',['../classWEBPImageFormat.html',1,'']]],
-  ['websocket_1503',['WebSocket',['../classWebSocket.html',1,'']]],
-  ['wetdrymix_1504',['WetDryMix',['../classWetDryMix.html',1,'']]],
-  ['wsheadertype_1505',['WSHeaderType',['../structWSHeaderType.html',1,'']]],
-  ['wtoscillator_1506',['WTOscillator',['../classWTOscillator.html',1,'']]],
-  ['wtvoicedstereooscillator_1507',['WTVoicedStereoOscillator',['../classWTVoicedStereoOscillator.html',1,'']]]
+  ['waveformcomponent_0',['WaveformComponent',['../classWaveformComponent.html',1,'']]],
+  ['wavetable_1',['Wavetable',['../classWavetable.html',1,'']]],
+  ['wavetablecomponent_2',['WavetableComponent',['../classWavetableComponent.html',1,'']]],
+  ['webpimageformat_3',['WEBPImageFormat',['../classWEBPImageFormat.html',1,'']]],
+  ['websocket_4',['WebSocket',['../classWebSocket.html',1,'']]],
+  ['wetdrymix_5',['WetDryMix',['../classWetDryMix.html',1,'']]],
+  ['whitenoise_6',['WhiteNoise',['../classWhiteNoise.html',1,'']]],
+  ['wsheadertype_7',['WSHeaderType',['../structWSHeaderType.html',1,'']]],
+  ['wtoscillator_8',['WTOscillator',['../classWTOscillator.html',1,'']]],
+  ['wtvoicedstereooscillator_9',['WTVoicedStereoOscillator',['../classWTVoicedStereoOscillator.html',1,'']]],
+  ['wtvoicedstereooscillatorparams_10',['WTVoicedStereoOscillatorParams',['../structWTVoicedStereoOscillatorParams.html',1,'']]]
 ];

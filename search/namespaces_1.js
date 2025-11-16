@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['resources_1511',['Resources',['../namespaceResources.html',1,'']]]
+  ['diff_0',['Diff',['../namespaceDiff.html',1,'']]],
+  ['distortion_1',['Distortion',['../namespaceDistortion.html',1,'']]]
 ];

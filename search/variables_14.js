@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['wave_2688',['wave',['../structStereoOscillator_1_1Params.html#a20a0ac6dcf991d68183208a99d95ea02',1,'StereoOscillator::Params::wave()'],['../structVoicedStereoOscillator_1_1Params.html#a83a9e522b4761797d6bf5b90ba610f41',1,'VoicedStereoOscillator::Params::wave()'],['../structWTOscillator_1_1Params.html#ab5232b4b55cc4d6b076db62478cd436e',1,'WTOscillator::Params::wave()']]],
-  ['waveshape_2689',['waveShape',['../structLFO_1_1Parameters.html#a5128a3dd3bf6a99e901bff2e962bdc81',1,'LFO::Parameters']]],
-  ['wetgain_2690',['wetGain',['../classWetDryMix.html#ab3f2edb9437368c6f3d87e51a64a3f2d',1,'WetDryMix']]],
-  ['writepos_2691',['writePos',['../classDelayLine.html#a277d65ab60f42d22f55d48596412c897',1,'DelayLine']]]
+  ['value_0',['value',['../structMSEG_1_1Point.html#ac98a21f546f74075d31bfffe81007352',1,'MSEG::Point::value'],['../classPropertyComponentBase.html#a3c5ee7d20c4aecc48394fc97aa050448',1,'PropertyComponentBase::value'],['../classKnob.html#a74c1d895c6e7c53c5ee564173cc5df1a',1,'Knob::value'],['../classHorizontalFader.html#aa9aef2326b35175ef22ad47a7f61d73c',1,'HorizontalFader::value'],['../structParameter_1_1ParamState.html#a9688db68c2a8bd8fc608720e62ea9c8a',1,'Parameter::ParamState::value'],['../classParameter.html#a7d3a170ac532a397f30e8a4415573b9a',1,'Parameter::value']]],
+  ['versionhint_1',['versionHint',['../classProcessor.html#a09c3b671e19fb6ba690ace06cca55aa9',1,'Processor']]],
+  ['voice_2',['voice',['../namespaceAssets.html#a51fab03de052ae2f94d63829643584c7',1,'Assets']]],
+  ['voicepath_3',['voicePath',['../classSynthesiserUsage.html#ac45af775287b4546013be488a67d5d7d',1,'SynthesiserUsage']]],
+  ['voices_4',['voices',['../structVoicedOscillatorParams.html#af8809e0628ba614f83f9bcc26940de5a',1,'VoicedOscillatorParams::voices'],['../classSynthesiserUsage.html#a2cb8e573343dc51b45899177cc111574',1,'SynthesiserUsage::voices']]]
 ];
