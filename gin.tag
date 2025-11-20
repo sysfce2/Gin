@@ -7,6 +7,11 @@
     <class kind="class">Catenary</class>
   </compound>
   <compound kind="file">
+    <name>gin_catenary.test.h</name>
+    <path>build/gin/geometry/</path>
+    <filename>gin__catenary_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_geometry.h</name>
     <path>build/gin/geometry/</path>
     <filename>gin__geometry_8h.html</filename>
@@ -28,10 +33,20 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_geometry.test.h</name>
+    <path>build/gin/geometry/</path>
+    <filename>gin__geometry_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_diff.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__diff_8h.html</filename>
     <namespace>Diff</namespace>
+  </compound>
+  <compound kind="file">
+    <name>gin_diff.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__diff_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_downloadmanager.h</name>
@@ -264,10 +279,20 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_easing.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__easing_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_equationparser.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__equationparser_8h.html</filename>
     <class kind="class">EquationParser</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_equationparser.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__equationparser_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_filesystemwatcher.h</name>
@@ -275,6 +300,11 @@
     <filename>gin__filesystemwatcher_8h.html</filename>
     <class kind="class">FileSystemWatcher</class>
     <class kind="class">FileSystemWatcher::Listener</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_filesystemwatcher.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__filesystemwatcher_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_fileutilities.h</name>
@@ -303,10 +333,20 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_fileutilities.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__fileutilities_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_integrator.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__integrator_8h.html</filename>
     <class kind="class">Integrator</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_integrator.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__integrator_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_lagrange.h</name>
@@ -315,10 +355,20 @@
     <namespace>Lagrange</namespace>
   </compound>
   <compound kind="file">
+    <name>gin_lagrange.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__lagrange_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_leastsquaresregression.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__leastsquaresregression_8h.html</filename>
     <class kind="class">LeastSquaresRegression</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_leastsquaresregression.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__leastsquaresregression_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_linearregression.h</name>
@@ -327,10 +377,31 @@
     <class kind="class">LinearRegression</class>
   </compound>
   <compound kind="file">
+    <name>gin_linearregression.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__linearregression_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>gin_lockfreequeue.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__lockfreequeue_8h.html</filename>
+    <class kind="class">LockFreeQueue</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_lockfreequeue.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__lockfreequeue_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_messagepack.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__messagepack_8h.html</filename>
     <class kind="class">MessagePack</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_messagepack.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__messagepack_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_plist.h</name>
@@ -359,6 +430,11 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_plist.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__plist_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_point.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__point_8h.html</filename>
@@ -369,6 +445,11 @@
     <path>build/gin/utilities/</path>
     <filename>gin__realtimeasyncupdater_8h.html</filename>
     <class kind="class">RealtimeAsyncUpdater</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_realtimeasyncupdater.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__realtimeasyncupdater_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_riffparser.h</name>
@@ -391,10 +472,20 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_riffparser.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__riffparser_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_sharedmemory.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__sharedmemory_8h.html</filename>
     <class kind="class">SharedMemory</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_sharedmemory.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__sharedmemory_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_spline.h</name>
@@ -404,16 +495,31 @@
     <class kind="class">Spline::Element</class>
   </compound>
   <compound kind="file">
+    <name>gin_spline.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__spline_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_systemsemaphore.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__systemsemaphore_8h.html</filename>
     <class kind="class">SystemSemaphore</class>
   </compound>
   <compound kind="file">
+    <name>gin_systemsemaphore.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__systemsemaphore_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_texthistory.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__texthistory_8h.html</filename>
     <class kind="class">TextHistory</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_texthistory.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__texthistory_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_threading.h</name>
@@ -435,10 +541,25 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_threading.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__threading_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>gin_util.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__util_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_valuetreeobject.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__valuetreeobject_8h.html</filename>
     <class kind="class">ValueTreeObject</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_valuetreeobject.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__valuetreeobject_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_valuetreeutilities.h</name>
@@ -460,6 +581,11 @@
       <anchor>ga88f482bf81fb3e423fa1e3926dfaa9a6</anchor>
       <arglist>(const juce::String &amp;jsonText)</arglist>
     </member>
+  </compound>
+  <compound kind="file">
+    <name>gin_valuetreeutilities.test.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__valuetreeutilities_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_audiosamplerbuffercomponent.h</name>
@@ -510,10 +636,20 @@
     <class kind="class">ADSR</class>
   </compound>
   <compound kind="file">
+    <name>gin_adsr.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__adsr_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_analogadsr.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__analogadsr_8h.html</filename>
     <class kind="class">AnalogADSR</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_analogadsr.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__analogadsr_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_audioequationparser.h</name>
@@ -526,6 +662,11 @@
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__audiofifo_8h.html</filename>
     <class kind="class">AudioFifo</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_audiofifo.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__audiofifo_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_audiofunctions.h</name>
@@ -545,10 +686,20 @@
     <class kind="class">AudioFunctionHost</class>
   </compound>
   <compound kind="file">
+    <name>gin_audiofunctions.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__audiofunctions_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_audiomidififo.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__audiomidififo_8h.html</filename>
     <class kind="class">AudioMidiFifo</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_audiomidififo.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__audiomidififo_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_audioutil.h</name>
@@ -651,6 +802,11 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_audioutil.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__audioutil_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_bandlimitedlookuptable.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__bandlimitedlookuptable_8h.html</filename>
@@ -723,10 +879,20 @@
     <class kind="class">DelayLine</class>
   </compound>
   <compound kind="file">
+    <name>gin_delayline.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__delayline_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_distortion.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__distortion_8h.html</filename>
     <class kind="class">AirWindowsDistortion</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_distortion.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__distortion_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_dynamics.h</name>
@@ -736,10 +902,51 @@
     <class kind="class">Dynamics</class>
   </compound>
   <compound kind="file">
+    <name>gin_dynamics.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__dynamics_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_easedvaluesmoother.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__easedvaluesmoother_8h.html</filename>
+    <class kind="struct">LinearEasing</class>
+    <class kind="struct">QuadraticInEasing</class>
+    <class kind="struct">QuadraticOutEasing</class>
+    <class kind="struct">QuadraticInOutEasing</class>
+    <class kind="struct">CubicInEasing</class>
+    <class kind="struct">CubicOutEasing</class>
+    <class kind="struct">CubicInOutEasing</class>
+    <class kind="struct">QuarticInEasing</class>
+    <class kind="struct">QuarticOutEasing</class>
+    <class kind="struct">QuarticInOutEasing</class>
+    <class kind="struct">QuinticInEasing</class>
+    <class kind="struct">QuinticOutEasing</class>
+    <class kind="struct">QuinticInOutEasing</class>
+    <class kind="struct">SineInEasing</class>
+    <class kind="struct">SineOutEasing</class>
+    <class kind="struct">SineInOutEasing</class>
+    <class kind="struct">CircularInEasing</class>
+    <class kind="struct">CircularOutEasing</class>
+    <class kind="struct">CircularInOutEasing</class>
+    <class kind="struct">ExponentialInEasing</class>
+    <class kind="struct">ExponentialOutEasing</class>
+    <class kind="struct">ExponentialInOutEasing</class>
+    <class kind="struct">ElasticInEasing</class>
+    <class kind="struct">ElasticOutEasing</class>
+    <class kind="struct">ElasticInOutEasing</class>
+    <class kind="struct">BackInEasing</class>
+    <class kind="struct">BackOutEasing</class>
+    <class kind="struct">BackInOutEasing</class>
+    <class kind="struct">BounceInEasing</class>
+    <class kind="struct">BounceOutEasing</class>
+    <class kind="struct">BounceInOutEasing</class>
     <class kind="class">EasedValueSmoother</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_easedvaluesmoother.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__easedvaluesmoother_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_eq.h</name>
@@ -752,6 +959,11 @@
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__fastmath_8h.html</filename>
     <class kind="class">FastMath</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_fastmath.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__fastmath_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_filter.h</name>
@@ -772,6 +984,11 @@
     <class kind="class">LevelTracker</class>
   </compound>
   <compound kind="file">
+    <name>gin_leveltracker.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__leveltracker_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_lfo.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__lfo_8h.html</filename>
@@ -779,10 +996,20 @@
     <class kind="struct">LFO::Parameters</class>
   </compound>
   <compound kind="file">
+    <name>gin_lfo.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__lfo_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_midififo.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__midififo_8h.html</filename>
     <class kind="class">MidiFifo</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_midififo.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__midififo_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_dsp/dsp/gin_modulation.h</name>
@@ -803,6 +1030,11 @@
     <class kind="class">ModMatrixBox::Row::DepthSlider</class>
   </compound>
   <compound kind="file">
+    <name>gin_modulation.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__modulation_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_mseg.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__mseg_8h.html</filename>
@@ -819,6 +1051,11 @@
     <class kind="class">PinkNoise</class>
   </compound>
   <compound kind="file">
+    <name>gin_noise.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__noise_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_oscillators.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__oscillators_8h.html</filename>
@@ -828,6 +1065,11 @@
     <class kind="class">VoicedStereoOscillator</class>
     <class kind="struct">VoicedStereoOscillatorParams</class>
     <class kind="class">BLLTVoicedStereoOscillator</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_oscillators.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__oscillators_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_platereverb.h</name>
@@ -866,6 +1108,11 @@
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__scratchbuffer_8h.html</filename>
     <class kind="class">ScratchBuffer</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_scratchbuffer.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__scratchbuffer_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_simpleverb.h</name>
@@ -918,6 +1165,11 @@
     <class kind="class">ValueSmoother</class>
   </compound>
   <compound kind="file">
+    <name>gin_valuesmoother.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__valuesmoother_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_wavetable.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__wavetable_8h.html</filename>
@@ -945,6 +1197,11 @@
     <path>build/gin_graphics/formats/</path>
     <filename>gin__bmpimageformat_8h.html</filename>
     <class kind="class">BMPImageFormat</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_bmpimageformat.test.h</name>
+    <path>build/gin_graphics/formats/</path>
+    <filename>gin__bmpimageformat_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_imageeffects.h</name>
@@ -1242,6 +1499,198 @@
       <anchor>ga590207f6293f03a5a4e4e2a1d4f3db15</anchor>
       <arglist>(juce::Image &amp;dst, BlendMode mode, juce::Colour c, juce::ThreadPool *threadPool=nullptr)</arglist>
     </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendNormal</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga5df60bffb135386b0fcb210a1053a70e</anchor>
+      <arglist>(int A, int)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLighten</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gab42c7b790fa3569fbe7f63ef74e0fd1a</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendDarken</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga664e70d0530b1cbeaaad40ff12482a4b</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendMultiply</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga50f496a63995152fe14fddefde479c5f</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendAverage</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga6197eee6d971667fd20ac56922f841f0</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendAdd</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga8143a520db520b538450852859ac0826</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendSubtract</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga0d8c0e79c92ca65e156aae63e7db769d</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendDifference</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga9ecb7f2333a9fa700e18e96e1212c300</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendNegation</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga4570f840cd466fc2252ba422281e12a8</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendScreen</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga1fdbc7c46ee6ad43c3fce755c7cdc770</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendExclusion</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gac2362a72ad08c8a9a1ca2c5ed55d27a1</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendOverlay</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gabb8fa1eec405c7934369fcceabfdb317</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendSoftLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga816ef20ba201222ee36ae88759459f78</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendHardLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gae1ffd6c5f4fb46fa703116921789b2ab</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendColorDodge</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaec96db4a9cbeadcec4310b5f9365b72f</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendColorBurn</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga977e3ee3b4de0a0c16b0a9ccfe39c102</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLinearDodge</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga9d02a1d3c853eb24aace4928e9cff9e5</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLinearBurn</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga1b1fcdf1c3489f81acc21cb22fc133a2</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLinearLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga7410e6c5f1a2221730975e0d81a69917</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendVividLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaa1902ca8a7156f1710bba8a03f36b6ed</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendPinLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gacbea98167275fa54b7cc6aab2660b33f</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendHardMix</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaf9a1d592f0676ead8a1f66bf431103ab</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendReflect</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaf244d0b40e5a7f83ca039868894b4140</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendGlow</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gac7cd86042e599d1c6308a7c9a588a075</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendPhoenix</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga33f5133880bec046ad012d0196814d55</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendAlpha</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga6ca2bcca3726d2fa3fc004a1e8bd7813</anchor>
+      <arglist>(uint8_t A, uint8_t B, float O)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>gin_imageeffects.test.h</name>
+    <path>build/gin_graphics/images/</path>
+    <filename>gin__imageeffects_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>gin_imageeffects_blending.test.h</name>
+    <path>build/gin_graphics/images/</path>
+    <filename>gin__imageeffects__blending_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_componentgrid.h</name>
@@ -1362,6 +1811,11 @@
     <path>build/gin_gui/utilities/</path>
     <filename>gin__layout_8h.html</filename>
     <class kind="class">Layout</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_layout.test.h</name>
+    <path>build/gin_gui/utilities/</path>
+    <filename>gin__layout_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_openstreetmaps.h</name>
@@ -1535,11 +1989,6 @@
     <filename>gin__http_8h.html</filename>
     <class kind="class">Http</class>
     <class kind="struct">Http::HttpResult</class>
-  </compound>
-  <compound kind="file">
-    <name>gin_oauth.h</name>
-    <path>build/gin_network/network/</path>
-    <filename>gin__oauth_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_securestreamingsocket.h</name>
@@ -1728,6 +2177,11 @@
     <path>build/gin_plugin/plugin/</path>
     <filename>gin__noteduration_8h.html</filename>
     <class kind="class">NoteDuration</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_noteduration.test.h</name>
+    <path>build/gin_plugin/plugin/</path>
+    <filename>gin__noteduration_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_parameter.h</name>
@@ -3557,6 +4011,39 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>BackInEasing</name>
+    <filename>structBackInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structBackInEasing.html</anchorfile>
+      <anchor>a0227215d03dec569192c2e83e1bf220c</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BackInOutEasing</name>
+    <filename>structBackInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structBackInOutEasing.html</anchorfile>
+      <anchor>a529d0507c8e08f070c7864bcad573f75</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BackOutEasing</name>
+    <filename>structBackOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structBackOutEasing.html</anchorfile>
+      <anchor>a5ef7d42f4f558a2dfe799ec482c677ae</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>BandLimitedLookupTable</name>
     <filename>classBandLimitedLookupTable.html</filename>
@@ -3784,6 +4271,39 @@
       <arglist>(const juce::Image &amp;sourceImage, juce::OutputStream &amp;destStream) override</arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>BounceInEasing</name>
+    <filename>structBounceInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structBounceInEasing.html</anchorfile>
+      <anchor>adee504e37e2da8f430c749792ff140d1</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BounceInOutEasing</name>
+    <filename>structBounceInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structBounceInOutEasing.html</anchorfile>
+      <anchor>aaf57f64266649cd005be25b21c8e27f9</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>BounceOutEasing</name>
+    <filename>structBounceOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structBounceOutEasing.html</anchorfile>
+      <anchor>af70d7f3da58b0d2683a32cbc5460eabb</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>BoxArea</name>
     <filename>classBoxArea.html</filename>
@@ -3919,6 +4439,39 @@
       <anchorfile>classCatenary.html</anchorfile>
       <anchor>a7c19a9269b72f4b2555834c8be3e16d9</anchor>
       <arglist>() const</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CircularInEasing</name>
+    <filename>structCircularInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structCircularInEasing.html</anchorfile>
+      <anchor>ad540143e5d79921b3897951faa764218</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CircularInOutEasing</name>
+    <filename>structCircularInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structCircularInOutEasing.html</anchorfile>
+      <anchor>a7fdd00585ddd6b9bacc6a4917456cb46</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CircularOutEasing</name>
+    <filename>structCircularOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structCircularOutEasing.html</anchorfile>
+      <anchor>a73699b8cbb240e41019106c4a5e4a8a5</anchor>
+      <arglist>(T p)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -4415,6 +4968,39 @@
       <anchorfile>classCopperLookAndFeelWrapper.html</anchorfile>
       <anchor>af2da6ddd887a26c92e047e30d0f08c9a</anchor>
       <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CubicInEasing</name>
+    <filename>structCubicInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structCubicInEasing.html</anchorfile>
+      <anchor>ac099f19316abf6890430d4126293640d</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CubicInOutEasing</name>
+    <filename>structCubicInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structCubicInOutEasing.html</anchorfile>
+      <anchor>a8c5b457b544f7c72f0aa740bc4d212e2</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>CubicOutEasing</name>
+    <filename>structCubicOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structCubicOutEasing.html</anchorfile>
+      <anchor>a653ab7687c11f9cdcd76cf7ea0aefbba</anchor>
+      <arglist>(T p)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -5123,89 +5709,123 @@
     <name>EasedValueSmoother</name>
     <filename>classEasedValueSmoother.html</filename>
     <templarg>class T</templarg>
+    <templarg>class EasingFunction</templarg>
     <member kind="function">
       <type>void</type>
       <name>setSampleRate</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>af3e8fdfbc38ae23ac474d8b6fae49035</anchor>
+      <anchor>a5ce5e13f891e611b07aed1748155ea59</anchor>
       <arglist>(double sr)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setTime</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>af357f90cafbcd77ed26973f3cfe7a569</anchor>
+      <anchor>ad10d8146b7b4f22edf1cb6c6ee619f08</anchor>
       <arglist>(double t)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>isSmoothing</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>aed083f859f945a33ca3398d5d651feb2</anchor>
+      <anchor>a33df5a30e9d9bcf903a77a616557bc18</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>reset</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>a206d1556877ab9c11b43e17f5976e6ab</anchor>
+      <anchor>ab128573be40bdd2b696ec5a654baeed4</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>T</type>
       <name>getCurrentValue</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>a73fa9f74e2e75fbd0d5fcf15d2cbef7d</anchor>
+      <anchor>a5733e3bf12223a3410bc0b00cc52fc47</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>T *</type>
       <name>getValuePtr</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>a4043a8366bba3571237bb3776fc70bce</anchor>
+      <anchor>a0cd16c500d2723e2c813ba100834d7c4</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>snapToValue</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>a29a41dfa10ea500d9ed4f4e7b45a989f</anchor>
+      <anchor>a208ad5171222c29bc97e4048b85884b0</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>process</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>a411637268d7606fb829f3b579ddce53c</anchor>
+      <anchor>a516cef00c057871b6a8278a39691376f</anchor>
       <arglist>(int n)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setValue</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>a26b174548959f6d55f52dd1bc9ff6afa</anchor>
+      <anchor>af684c9cdb58aec77e60783376296d75e</anchor>
       <arglist>(T v)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>updateValue</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>a266f723fcb2c393fbdd93599d46abcce</anchor>
+      <anchor>a94ff44655523770e2ae83d29bf9338c6</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>T</type>
       <name>getNextValue</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>abbebcf9bc5851c6bde91969b87aafe7b</anchor>
+      <anchor>ad97a48bbc53aaf6302a4856bb5142690</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setValueUnsmoothed</name>
       <anchorfile>classEasedValueSmoother.html</anchorfile>
-      <anchor>ae5e2dc56a32512d27b6ac147ae12859f</anchor>
+      <anchor>a94bbbd5ef15c8fefa425499976d14c7f</anchor>
       <arglist>(T v)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ElasticInEasing</name>
+    <filename>structElasticInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structElasticInEasing.html</anchorfile>
+      <anchor>a8bc6ff95e6403a8d0a77f1fd907d86d8</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ElasticInOutEasing</name>
+    <filename>structElasticInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structElasticInOutEasing.html</anchorfile>
+      <anchor>a83b1f607025652f378efec0acebfac19</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ElasticOutEasing</name>
+    <filename>structElasticOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structElasticOutEasing.html</anchorfile>
+      <anchor>acb904f7ff7c97ecbce778d3fb5f70453</anchor>
+      <arglist>(T p)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -5940,6 +6560,39 @@
       <anchorfile>classExifMetadata.html</anchorfile>
       <anchor>a3e92227b00faca02c46d331ea0c9e1f7</anchor>
       <arglist>(const juce::uint8 *data, int sz)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ExponentialInEasing</name>
+    <filename>structExponentialInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structExponentialInEasing.html</anchorfile>
+      <anchor>a0cb6f6382bc8b586f279df5c75598787</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ExponentialInOutEasing</name>
+    <filename>structExponentialInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structExponentialInOutEasing.html</anchorfile>
+      <anchor>a170a2396ff5665b93d93105cecca82be</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ExponentialOutEasing</name>
+    <filename>structExponentialOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structExponentialOutEasing.html</anchorfile>
+      <anchor>abd2f33cc311d9f3cb00cc77e4d141801</anchor>
+      <arglist>(T p)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -7845,6 +8498,48 @@
       <anchor>a2a152b945b2c1b21fa7b3a091916c44f</anchor>
       <arglist>(const juce::String &amp;name, double val)</arglist>
     </member>
+    <member kind="function" static="yes">
+      <type>static juce::String</type>
+      <name>getParentPath</name>
+      <anchorfile>classLayout.html</anchorfile>
+      <anchor>a6aba78b3f17d39a66d0c14b7f8efe5e0</anchor>
+      <arglist>(juce::String in)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static juce::String</type>
+      <name>addTrailingSlash</name>
+      <anchorfile>classLayout.html</anchorfile>
+      <anchor>a5810228b96e6ec40783495c90fb20840</anchor>
+      <arglist>(const juce::String &amp;path)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isAbsolutePath</name>
+      <anchorfile>classLayout.html</anchorfile>
+      <anchor>ac6ba5abda05720b3cccfc64db0e13b51</anchor>
+      <arglist>(juce::StringRef path)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static juce::String</type>
+      <name>getChildPath</name>
+      <anchorfile>classLayout.html</anchorfile>
+      <anchor>a9c74ac69b1135c59ad5684bd8ff84bb9</anchor>
+      <arglist>(juce::String fullPath, juce::StringRef relativePath)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static juce::StringArray</type>
+      <name>expandTokens</name>
+      <anchorfile>classLayout.html</anchorfile>
+      <anchor>ab6912e5c4b2c402375913dd6ea8268b3</anchor>
+      <arglist>(juce::StringArray in)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static juce::String</type>
+      <name>getComponentPath</name>
+      <anchorfile>classLayout.html</anchorfile>
+      <anchor>ace98c78372fa808cdc83bdee52ec3274</anchor>
+      <arglist>(juce::Component &amp;parent, juce::Component &amp;c)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>LeastSquaresRegression</name>
@@ -8245,6 +8940,17 @@
       <anchorfile>classLFOComponent.html</anchorfile>
       <anchor>af927dbf7a1817df13058482decffee09</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>LinearEasing</name>
+    <filename>structLinearEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structLinearEasing.html</anchorfile>
+      <anchor>a50ce81ebf59f33a1e1dc370ebfca2e31</anchor>
+      <arglist>(T p)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -8717,6 +9423,74 @@
       <anchorfile>classLocationManager.html</anchorfile>
       <anchor>af80c2bc011f936ad1e988e5f841307e5</anchor>
       <arglist>(Listener *)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>LockFreeQueue</name>
+    <filename>classLockFreeQueue.html</filename>
+    <templarg>typename T</templarg>
+    <member kind="function">
+      <type></type>
+      <name>LockFreeQueue</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>ac4fdd21aae93a42ddbfd725a22c8bb90</anchor>
+      <arglist>(int capacity=128)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSize</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>aacf338f8603107d670eba48aa8c1fee5</anchor>
+      <arglist>(int capacity)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getFreeSpace</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>a25b60519d6f56e2d1d8c793071097797</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getNumReady</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>a7db225cca7d2723ee4b9e6dfc2bdab44</anchor>
+      <arglist>() const noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>acd0943eca49e8caf8eb586b06cb90436</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>write</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>a84ebe3916f4da9c916e7ecb6a7cb4d19</anchor>
+      <arglist>(T item)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::optional&lt; T &gt;</type>
+      <name>peek</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>aad59e7bda5147c7078ae94e4430dcb8d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::optional&lt; T &gt;</type>
+      <name>read</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>aa2a28a6c43db8f57bdfd4178d18f78f4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>pop</name>
+      <anchorfile>classLockFreeQueue.html</anchorfile>
+      <anchor>a7f38b21941a29a7169e58c1311c9bba2</anchor>
+      <arglist>(int num)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -13613,6 +14387,105 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>QuadraticInEasing</name>
+    <filename>structQuadraticInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuadraticInEasing.html</anchorfile>
+      <anchor>af8688d013f81449977b0b855c2c70ca8</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuadraticInOutEasing</name>
+    <filename>structQuadraticInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuadraticInOutEasing.html</anchorfile>
+      <anchor>ae19108903abae970887c7ce4d796f6d8</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuadraticOutEasing</name>
+    <filename>structQuadraticOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuadraticOutEasing.html</anchorfile>
+      <anchor>ae608f38ee92c8a2c37b8a6453a695604</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuarticInEasing</name>
+    <filename>structQuarticInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuarticInEasing.html</anchorfile>
+      <anchor>ac3c21152a9006e096e9140c14a20197b</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuarticInOutEasing</name>
+    <filename>structQuarticInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuarticInOutEasing.html</anchorfile>
+      <anchor>a66562efc1c291a46f35311a5f044303c</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuarticOutEasing</name>
+    <filename>structQuarticOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuarticOutEasing.html</anchorfile>
+      <anchor>a9572b24f1457b2b56ade1bb251adf354</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuinticInEasing</name>
+    <filename>structQuinticInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuinticInEasing.html</anchorfile>
+      <anchor>a8ec0e1edd5aa29513108f4699105cf3e</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuinticInOutEasing</name>
+    <filename>structQuinticInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuinticInOutEasing.html</anchorfile>
+      <anchor>a43a227418ac7a1ce0b581276eabc0745</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>QuinticOutEasing</name>
+    <filename>structQuinticOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structQuinticOutEasing.html</anchorfile>
+      <anchor>a29c0183b8d90279aed4b0ae773d6c8dd</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>Readout</name>
     <filename>classReadout.html</filename>
@@ -14321,6 +15194,39 @@
       <anchorfile>classSimpleVerb.html</anchorfile>
       <anchor>a69ee1d22a4025b221a5af157bdeca96d</anchor>
       <arglist>(float roomIn, float dampIn, float preDelayIn, float lpFaderIn, float hpFaderIn, float wetIn, float dryIn)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>SineInEasing</name>
+    <filename>structSineInEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structSineInEasing.html</anchorfile>
+      <anchor>ad7284b8f15530d98801b353ce6b916bd</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>SineInOutEasing</name>
+    <filename>structSineInOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structSineInOutEasing.html</anchorfile>
+      <anchor>a5a054ca60634c96aa4c705da8c68728e</anchor>
+      <arglist>(T p)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>SineOutEasing</name>
+    <filename>structSineOutEasing.html</filename>
+    <member kind="function" static="yes">
+      <type>static T</type>
+      <name>ease</name>
+      <anchorfile>structSineOutEasing.html</anchorfile>
+      <anchor>ab8a859d0863465dda09dc40ba62f7a1f</anchor>
+      <arglist>(T p)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -18859,6 +19765,37 @@
     <class kind="class">AirWindowsDistortion</class>
     <class kind="class">EnvelopeDetector</class>
     <class kind="class">Dynamics</class>
+    <class kind="struct">LinearEasing</class>
+    <class kind="struct">QuadraticInEasing</class>
+    <class kind="struct">QuadraticOutEasing</class>
+    <class kind="struct">QuadraticInOutEasing</class>
+    <class kind="struct">CubicInEasing</class>
+    <class kind="struct">CubicOutEasing</class>
+    <class kind="struct">CubicInOutEasing</class>
+    <class kind="struct">QuarticInEasing</class>
+    <class kind="struct">QuarticOutEasing</class>
+    <class kind="struct">QuarticInOutEasing</class>
+    <class kind="struct">QuinticInEasing</class>
+    <class kind="struct">QuinticOutEasing</class>
+    <class kind="struct">QuinticInOutEasing</class>
+    <class kind="struct">SineInEasing</class>
+    <class kind="struct">SineOutEasing</class>
+    <class kind="struct">SineInOutEasing</class>
+    <class kind="struct">CircularInEasing</class>
+    <class kind="struct">CircularOutEasing</class>
+    <class kind="struct">CircularInOutEasing</class>
+    <class kind="struct">ExponentialInEasing</class>
+    <class kind="struct">ExponentialOutEasing</class>
+    <class kind="struct">ExponentialInOutEasing</class>
+    <class kind="struct">ElasticInEasing</class>
+    <class kind="struct">ElasticOutEasing</class>
+    <class kind="struct">ElasticInOutEasing</class>
+    <class kind="struct">BackInEasing</class>
+    <class kind="struct">BackOutEasing</class>
+    <class kind="struct">BackInOutEasing</class>
+    <class kind="struct">BounceInEasing</class>
+    <class kind="struct">BounceOutEasing</class>
+    <class kind="struct">BounceInOutEasing</class>
     <class kind="class">EasedValueSmoother</class>
     <class kind="class">EQ</class>
     <class kind="class">FastMath</class>
@@ -19491,6 +20428,188 @@
       <anchor>ga590207f6293f03a5a4e4e2a1d4f3db15</anchor>
       <arglist>(juce::Image &amp;dst, BlendMode mode, juce::Colour c, juce::ThreadPool *threadPool=nullptr)</arglist>
     </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendNormal</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga5df60bffb135386b0fcb210a1053a70e</anchor>
+      <arglist>(int A, int)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLighten</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gab42c7b790fa3569fbe7f63ef74e0fd1a</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendDarken</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga664e70d0530b1cbeaaad40ff12482a4b</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendMultiply</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga50f496a63995152fe14fddefde479c5f</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendAverage</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga6197eee6d971667fd20ac56922f841f0</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendAdd</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga8143a520db520b538450852859ac0826</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendSubtract</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga0d8c0e79c92ca65e156aae63e7db769d</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendDifference</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga9ecb7f2333a9fa700e18e96e1212c300</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendNegation</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga4570f840cd466fc2252ba422281e12a8</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendScreen</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga1fdbc7c46ee6ad43c3fce755c7cdc770</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendExclusion</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gac2362a72ad08c8a9a1ca2c5ed55d27a1</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendOverlay</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gabb8fa1eec405c7934369fcceabfdb317</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendSoftLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga816ef20ba201222ee36ae88759459f78</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendHardLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gae1ffd6c5f4fb46fa703116921789b2ab</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendColorDodge</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaec96db4a9cbeadcec4310b5f9365b72f</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendColorBurn</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga977e3ee3b4de0a0c16b0a9ccfe39c102</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLinearDodge</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga9d02a1d3c853eb24aace4928e9cff9e5</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLinearBurn</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga1b1fcdf1c3489f81acc21cb22fc133a2</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendLinearLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga7410e6c5f1a2221730975e0d81a69917</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendVividLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaa1902ca8a7156f1710bba8a03f36b6ed</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendPinLight</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gacbea98167275fa54b7cc6aab2660b33f</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendHardMix</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaf9a1d592f0676ead8a1f66bf431103ab</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendReflect</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gaf244d0b40e5a7f83ca039868894b4140</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendGlow</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>gac7cd86042e599d1c6308a7c9a588a075</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendPhoenix</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga33f5133880bec046ad012d0196814d55</anchor>
+      <arglist>(int A, int B)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint8_t</type>
+      <name>channelBlendAlpha</name>
+      <anchorfile>group__gin__graphics-images.html</anchorfile>
+      <anchor>ga6ca2bcca3726d2fa3fc004a1e8bd7813</anchor>
+      <arglist>(uint8_t A, uint8_t B, float O)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>gin_location-location</name>
@@ -19623,6 +20742,7 @@
     <class kind="class">Integrator</class>
     <class kind="class">LeastSquaresRegression</class>
     <class kind="class">LinearRegression</class>
+    <class kind="class">LockFreeQueue</class>
     <class kind="class">MessagePack</class>
     <class kind="class">Point</class>
     <class kind="class">RealtimeAsyncUpdater</class>
