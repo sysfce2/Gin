@@ -452,6 +452,12 @@
     <filename>gin__realtimeasyncupdater_8test_8h.html</filename>
   </compound>
   <compound kind="file">
+    <name>gin_realtimeevent.h</name>
+    <path>build/gin/utilities/</path>
+    <filename>gin__realtimeevent_8h.html</filename>
+    <class kind="class">RealtimeEvent</class>
+  </compound>
+  <compound kind="file">
     <name>gin_riffparser.h</name>
     <path>build/gin/utilities/</path>
     <filename>gin__riffparser_8h.html</filename>
@@ -955,6 +961,11 @@
     <class kind="class">EQ</class>
   </compound>
   <compound kind="file">
+    <name>gin_eq.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__eq_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_fastmath.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__fastmath_8h.html</filename>
@@ -970,6 +981,11 @@
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__filter_8h.html</filename>
     <class kind="class">Filter</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_filter.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__filter_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_gateeffect.h</name>
@@ -1153,6 +1169,11 @@
     <class kind="class">Synthesiser</class>
   </compound>
   <compound kind="file">
+    <name>gin_synthesiser.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__synthesiser_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_textrenderer.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__textrenderer_8h.html</filename>
@@ -1174,6 +1195,11 @@
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__wavetable_8h.html</filename>
     <class kind="class">Wavetable</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_wavetable.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__wavetable_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_wtoscillators.h</name>
@@ -2239,6 +2265,11 @@
     <class kind="class">ModMatrix::Listener</class>
   </compound>
   <compound kind="file">
+    <name>gin_modmatrix.test.h</name>
+    <path>build/gin_plugin/plugin/</path>
+    <filename>gin__modmatrix_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_noteduration.h</name>
     <path>build/gin_plugin/plugin/</path>
     <filename>gin__noteduration_8h.html</filename>
@@ -2256,6 +2287,11 @@
     <class kind="class">Parameter</class>
     <class kind="class">Parameter::ParameterListener</class>
     <class kind="struct">Parameter::ParamState</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_parameter.test.h</name>
+    <path>build/gin_plugin/plugin/</path>
+    <filename>gin__parameter_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_processor.h</name>
@@ -2284,10 +2320,20 @@
     <class kind="class">Program</class>
   </compound>
   <compound kind="file">
+    <name>gin_program.test.h</name>
+    <path>build/gin_plugin/plugin/</path>
+    <filename>gin__program_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_smoothedparameter.h</name>
     <path>build/gin_plugin/plugin/</path>
     <filename>gin__smoothedparameter_8h.html</filename>
     <class kind="class">SmoothedParameter</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_smoothedparameter.test.h</name>
+    <path>build/gin_plugin/plugin/</path>
+    <filename>gin__smoothedparameter_8test_8h.html</filename>
   </compound>
   <compound kind="file">
     <name>gin_math.h</name>
@@ -12294,6 +12340,7 @@
   <compound kind="class">
     <name>Parameter</name>
     <filename>classParameter.html</filename>
+    <base>RealtimeAsyncUpdater</base>
     <class kind="class">Parameter::ParameterListener</class>
     <class kind="struct">Parameter::ParamState</class>
     <member kind="typedef">
@@ -15032,6 +15079,38 @@
       <anchorfile>classRealtimeAsyncUpdater.html</anchorfile>
       <anchor>a86dee41bf003fdbf125d0b3683acbaf0</anchor>
       <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>RealtimeEvent</name>
+    <filename>classRealtimeEvent.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>RealtimeEvent</name>
+      <anchorfile>classRealtimeEvent.html</anchorfile>
+      <anchor>a0878e152a86c871fe96b8806fb4ac0b6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~RealtimeEvent</name>
+      <anchorfile>classRealtimeEvent.html</anchorfile>
+      <anchor>aa2266c37cbc60ad4acc0e2b1d8cdcc46</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>signal</name>
+      <anchorfile>classRealtimeEvent.html</anchorfile>
+      <anchor>a6604ea7780cc5457ab26d6a4f7bb7911</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>wait</name>
+      <anchorfile>classRealtimeEvent.html</anchorfile>
+      <anchor>ab35f4c31917cf2e6e7af90902c65d910</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -21383,6 +21462,7 @@
     <class kind="class">MessagePack</class>
     <class kind="class">Point</class>
     <class kind="class">RealtimeAsyncUpdater</class>
+    <class kind="class">RealtimeEvent</class>
     <class kind="class">RIFFParser</class>
     <class kind="class">SharedMemory</class>
     <class kind="class">Spline</class>
