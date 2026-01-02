@@ -25,7 +25,7 @@ var searchData=
   ['centeron_22',['centerOn',['../classMapViewer.html#a77a364ca834883bbc75428ba81e92f79',1,'MapViewer']]],
   ['centerunderpt_23',['centerUnderPt',['../classMapViewer.html#a78d97113c9fff03aa70d4f334bf0a125',1,'MapViewer']]],
   ['changed_24',['changed',['../classParameter.html#a5ddd8918e54589b570925d7530fd2943',1,'Parameter']]],
-  ['changelistenercallback_25',['changeListenerCallback',['../classTitleBar.html#a33bfbb4b2223e0401bf883fbb8403991',1,'TitleBar']]],
+  ['changelistenercallback_25',['changelistenercallback',['../classSideBarComponent.html#a5a995982fd9b69407f63814a2bc80ce4',1,'SideBarComponent::changeListenerCallback()'],['../classTitleBar.html#a33bfbb4b2223e0401bf883fbb8403991',1,'TitleBar::changeListenerCallback()']]],
   ['changeprogramname_26',['changeProgramName',['../classProcessor.html#a912ce9ee0afb3cc9b48804cd5566f1ea',1,'Processor']]],
   ['channelblendadd_27',['channelBlendAdd',['../group__gin__graphics-images.html#ga8143a520db520b538450852859ac0826',1,'gin_imageeffects.h']]],
   ['channelblendalpha_28',['channelBlendAlpha',['../group__gin__graphics-images.html#ga6ca2bcca3726d2fa3fc004a1e8bd7813',1,'gin_imageeffects.h']]],

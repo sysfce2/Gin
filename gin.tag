@@ -17193,6 +17193,20 @@
       <anchor>a42f3ca7c69438c6d827c7d335c12ec2c</anchor>
       <arglist>() override</arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>changeListenerCallback</name>
+      <anchorfile>classSideBarComponent.html</anchorfile>
+      <anchor>a5a995982fd9b69407f63814a2bc80ce4</anchor>
+      <arglist>(juce::ChangeBroadcaster *source) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>updateComponentVisibility</name>
+      <anchorfile>classSideBarComponent.html</anchorfile>
+      <anchor>a74c895098ecb476d9e795867caa9d345</anchor>
+      <arglist>()</arglist>
+    </member>
     <member kind="variable" static="yes">
       <type>static constexpr int</type>
       <name>width</name>
@@ -17582,6 +17596,20 @@
       <anchorfile>classStandaloneAudioProcessorPlayer.html</anchorfile>
       <anchor>aea57e9306ee879a358783acc09f3ce71</anchor>
       <arglist>(juce::AudioBuffer&lt; float &gt; &amp;buffer, juce::MidiBuffer &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setOutputGain</name>
+      <anchorfile>classStandaloneAudioProcessorPlayer.html</anchorfile>
+      <anchor>a4539f1ec3a9d1b633f182073afc820fe</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getOutputGain</name>
+      <anchorfile>classStandaloneAudioProcessorPlayer.html</anchorfile>
+      <anchor>abf08198b7db8732ee1b7becd99074e2f</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="variable">
       <type>AudioFifo</type>
@@ -19448,11 +19476,39 @@
       <arglist>(bool singleTrigger_)</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>hasTriggered</name>
+      <anchorfile>classTriggeredScope.html</anchorfile>
+      <anchor>a877a30035e2a4a2a94d42a5590f29b18</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPaused</name>
+      <anchorfile>classTriggeredScope.html</anchorfile>
+      <anchor>aa035ee8ac38e4572c26378dde112f81f</anchor>
+      <arglist>(bool shouldBePaused)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPaused</name>
+      <anchorfile>classTriggeredScope.html</anchorfile>
+      <anchor>a4689b5f22ae5cc5c8006454cfbf6e131</anchor>
+      <arglist>(bool shouldBePaused, int lockTriggerPoint)</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>resetTrigger</name>
       <anchorfile>classTriggeredScope.html</anchorfile>
       <anchor>a591d6ef5a24faafa899825294c6c77a5</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isPaused</name>
+      <anchorfile>classTriggeredScope.html</anchorfile>
+      <anchor>abcd7e73427ef2daf201ab3d15120fa49</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -19543,6 +19599,27 @@
       <name>mouseMove</name>
       <anchorfile>classTriggeredScope.html</anchorfile>
       <anchor>a91dd2852cb4d5dfc5dc10847073c9239</anchor>
+      <arglist>(const juce::MouseEvent &amp;e) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>mouseDown</name>
+      <anchorfile>classTriggeredScope.html</anchorfile>
+      <anchor>a3b4980be9fb58f63ae049756b64703c9</anchor>
+      <arglist>(const juce::MouseEvent &amp;e) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>mouseDrag</name>
+      <anchorfile>classTriggeredScope.html</anchorfile>
+      <anchor>a3a2e0faf726714e0a3584715c94bcb5d</anchor>
+      <arglist>(const juce::MouseEvent &amp;e) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>mouseUp</name>
+      <anchorfile>classTriggeredScope.html</anchorfile>
+      <anchor>a393fa47d65044fd19d6de3bba5c3cdd8</anchor>
       <arglist>(const juce::MouseEvent &amp;e) override</arglist>
     </member>
     <member kind="function">
