@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['n_0',['n',['../classLinearRegression.html#a2538a18e56f7da311ae94edbb903e1bd',1,'LinearRegression::n'],['../structWSHeaderType.html#a280de6932d75f1d0b3f5687f839d4e92',1,'WSHeaderType::N']]],
+  ['n_0',['n',['../structWSHeaderType.html#a280de6932d75f1d0b3f5687f839d4e92',1,'WSHeaderType::N'],['../classLinearRegression.html#a2538a18e56f7da311ae94edbb903e1bd',1,'LinearRegression::n']]],
   ['n0_1',['N0',['../structWSHeaderType.html#a6c084039602e19593f16e198194258ea',1,'WSHeaderType']]],
-  ['name_2',['name',['../classProgram.html#ab960dff0d490441b19a47c7788ef5308',1,'Program::name'],['../classParameter.html#af3f67d57880c012b966413174dff2e75',1,'Parameter::name'],['../classSelect.html#a68477089c5c406d199fe071d09080be4',1,'Select::name'],['../classHorizontalFader.html#ab70425a9c8226dd53432dde0222dba8f',1,'HorizontalFader::name'],['../classKnob.html#a4cf5ed46637f0b10594b6d43b2f4067b',1,'Knob::name'],['../group__gin__gui-utilities.html#gab7f29046e16e28190c441e4b50e638d7',1,'juce::VarIterator::NamedValue::name'],['../structLayoutSupport_1_1JsonFile.html#a2b9f0063b43223b5b8af0cd698214f91',1,'LayoutSupport::JsonFile::name']]],
+  ['name_2',['name',['../classProgram.html#ab960dff0d490441b19a47c7788ef5308',1,'Program::name'],['../classParameter.html#af3f67d57880c012b966413174dff2e75',1,'Parameter::name'],['../classSelect.html#a68477089c5c406d199fe071d09080be4',1,'Select::name'],['../classKnob.html#a4cf5ed46637f0b10594b6d43b2f4067b',1,'Knob::name'],['../classHorizontalFader.html#ab70425a9c8226dd53432dde0222dba8f',1,'HorizontalFader::name'],['../group__gin__gui-utilities.html#gab7f29046e16e28190c441e4b50e638d7',1,'juce::VarIterator::NamedValue::name'],['../structLayoutSupport_1_1JsonFile.html#a2b9f0063b43223b5b8af0cd698214f91',1,'LayoutSupport::JsonFile::name']]],
   ['namedvalue_3',['NamedValue',['../structjuce_1_1VarIterator_1_1NamedValue.html',1,'juce::VarIterator']]],
   ['negation_4',['Negation',['../group__gin__graphics-images.html#gga30323fa90e24ca484998b9fba6c40e85ab94b0efce58a77e1c8fa29e32536c728',1,'gin_imageeffects.h']]],
   ['network_5',['network',['../group__gin__network-network.html',1,'']]],
@@ -35,9 +35,10 @@ var searchData=
   ['noteretriggered_32',['noteRetriggered',['../classSynthesiserVoice.html#a3d50ddac2700fd39a6a00f865de211ad',1,'SynthesiserVoice']]],
   ['notespertable_33',['notesPerTable',['../classBandLimitedLookupTable.html#a16759d173143073a70627173a7b45220',1,'BandLimitedLookupTable']]],
   ['nsimagetoimage_34',['nsImageToImage',['../namespacemacOS.html#aa16780bbaa0ee9db90a45b1ac772cd41',1,'macOS']]],
-  ['numchannels_35',['numchannels',['../structAudioProcessorPlayer_1_1NumChannels.html#a5e0880ee8a074d4784e8b4e51dfd61d1',1,'AudioProcessorPlayer::NumChannels::NumChannels(int numIns, int numOuts)'],['../structAudioProcessorPlayer_1_1NumChannels.html#a2afe27ce65b2292803d7c479d1c41731',1,'AudioProcessorPlayer::NumChannels::NumChannels(const juce::AudioProcessor::BusesLayout &amp;layout)'],['../structAudioProcessorPlayer_1_1NumChannels.html#ac86fef4347a2aaa500f08b04583f4448',1,'AudioProcessorPlayer::NumChannels::NumChannels()=default'],['../structAudioProcessorPlayer_1_1NumChannels.html',1,'AudioProcessorPlayer::NumChannels']]],
-  ['numerator_36',['numerator',['../classAudioMetadata.html#a58358a2c2f1cda302296bc1610218d18',1,'AudioMetadata']]],
-  ['numins_37',['numIns',['../structStandalonePluginHolder_1_1PluginInOuts.html#a2c18cb6876bc952ba5df80df92500c34',1,'StandalonePluginHolder::PluginInOuts']]],
-  ['numouts_38',['numOuts',['../structStandalonePluginHolder_1_1PluginInOuts.html#ae8defe449815bf6e651a92944240f6c0',1,'StandalonePluginHolder::PluginInOuts']]],
-  ['numpoints_39',['numPoints',['../structMSEG_1_1Data.html#a346affc8c6dea61cc798b9fda79e7248',1,'MSEG::Data']]]
+  ['numbands_35',['NumBands',['../classGraphicEQ.html#a6d636078e63f2e681ecb6c82a700ab4a',1,'GraphicEQ']]],
+  ['numchannels_36',['numchannels',['../structAudioProcessorPlayer_1_1NumChannels.html#ac86fef4347a2aaa500f08b04583f4448',1,'AudioProcessorPlayer::NumChannels::NumChannels()=default'],['../structAudioProcessorPlayer_1_1NumChannels.html#a5e0880ee8a074d4784e8b4e51dfd61d1',1,'AudioProcessorPlayer::NumChannels::NumChannels(int numIns, int numOuts)'],['../structAudioProcessorPlayer_1_1NumChannels.html#a2afe27ce65b2292803d7c479d1c41731',1,'AudioProcessorPlayer::NumChannels::NumChannels(const juce::AudioProcessor::BusesLayout &amp;layout)'],['../structAudioProcessorPlayer_1_1NumChannels.html',1,'AudioProcessorPlayer::NumChannels']]],
+  ['numerator_37',['numerator',['../classAudioMetadata.html#a58358a2c2f1cda302296bc1610218d18',1,'AudioMetadata']]],
+  ['numins_38',['numIns',['../structStandalonePluginHolder_1_1PluginInOuts.html#a2c18cb6876bc952ba5df80df92500c34',1,'StandalonePluginHolder::PluginInOuts']]],
+  ['numouts_39',['numOuts',['../structStandalonePluginHolder_1_1PluginInOuts.html#ae8defe449815bf6e651a92944240f6c0',1,'StandalonePluginHolder::PluginInOuts']]],
+  ['numpoints_40',['numPoints',['../structMSEG_1_1Data.html#a346affc8c6dea61cc798b9fda79e7248',1,'MSEG::Data']]]
 ];

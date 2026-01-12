@@ -1116,6 +1116,17 @@
     <class kind="class">GateEffect</class>
   </compound>
   <compound kind="file">
+    <name>gin_graphiceq.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__graphiceq_8h.html</filename>
+    <class kind="class">GraphicEQ</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_graphiceq.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__graphiceq_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_leveltracker.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__leveltracker_8h.html</filename>
@@ -1161,22 +1172,10 @@
     <filename>gin__midifileplayer_8test_8h.html</filename>
   </compound>
   <compound kind="file">
-    <name>gin_dsp/dsp/gin_modulation.h</name>
+    <name>gin_modulation.h</name>
     <path>build/gin_dsp/dsp/</path>
-    <filename>gin__dsp_2dsp_2gin__modulation_8h.html</filename>
+    <filename>gin__modulation_8h.html</filename>
     <class kind="class">Modulation</class>
-  </compound>
-  <compound kind="file">
-    <name>gin_plugin/components/gin_modulation.h</name>
-    <path>build/gin_plugin/components/</path>
-    <filename>gin__plugin_2components_2gin__modulation_8h.html</filename>
-    <class kind="class">ModulationSourceButton</class>
-    <class kind="class">ModulationDepthSlider</class>
-    <class kind="class">ModulationOverview</class>
-    <class kind="class">ModSrcListBox</class>
-    <class kind="class">ModCurveButton</class>
-    <class kind="class">ModMatrixBox</class>
-    <class kind="class">ModMatrixBox::Row::DepthSlider</class>
   </compound>
   <compound kind="file">
     <name>gin_modulation.test.h</name>
@@ -2291,6 +2290,12 @@
     <class kind="class">HeaderRow</class>
   </compound>
   <compound kind="file">
+    <name>gin_horizontalfader.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__horizontalfader_8h.html</filename>
+    <class kind="class">HorizontalFader</class>
+  </compound>
+  <compound kind="file">
     <name>gin_knob.h</name>
     <path>build/gin_plugin/components/</path>
     <filename>gin__knob_8h.html</filename>
@@ -2301,6 +2306,55 @@
     <path>build/gin_plugin/components/</path>
     <filename>gin__lfocomponent_8h.html</filename>
     <class kind="class">LFOComponent</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_midilearnoverlay.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__midilearnoverlay_8h.html</filename>
+    <class kind="class">MidiLearnOverlay</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_modcurvebutton.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__modcurvebutton_8h.html</filename>
+    <class kind="class">ModCurveButton</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_modmatrixbox.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__modmatrixbox_8h.html</filename>
+    <class kind="class">ModMatrixBox</class>
+    <class kind="class">ModMatrixBox::Row::DepthSlider</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_modoverlay.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__modoverlay_8h.html</filename>
+    <class kind="class">ModOverlay</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_modsrclistbox.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__modsrclistbox_8h.html</filename>
+    <class kind="class">ModSrcListBox</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_modulationdepthslider.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__modulationdepthslider_8h.html</filename>
+    <class kind="class">ModulationDepthSlider</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_modulationoverview.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__modulationoverview_8h.html</filename>
+    <class kind="class">ModulationOverview</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_modulationsourcebutton.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__modulationsourcebutton_8h.html</filename>
+    <class kind="class">ModulationSourceButton</class>
   </compound>
   <compound kind="file">
     <name>gin_msegcomponent.h</name>
@@ -2332,6 +2386,12 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_paramcomponent.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__paramcomponent_8h.html</filename>
+    <class kind="class">ParamComponent</class>
+  </compound>
+  <compound kind="file">
     <name>gin_patchbrowser.h</name>
     <path>build/gin_plugin/components/</path>
     <filename>gin__patchbrowser_8h.html</filename>
@@ -2347,20 +2407,18 @@
     <class kind="class">PluginAlertWindow</class>
   </compound>
   <compound kind="file">
-    <name>gin_plugincomponents.h</name>
+    <name>gin_pluginbutton.h</name>
     <path>build/gin_plugin/components/</path>
-    <filename>gin__plugincomponents_8h.html</filename>
+    <filename>gin__pluginbutton_8h.html</filename>
     <class kind="class">PluginButton</class>
     <class kind="class">SVGPluginButton</class>
     <class kind="class">PowerButton</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_plugincombobox.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__plugincombobox_8h.html</filename>
     <class kind="class">PluginComboBox</class>
-    <class kind="class">PluginSlider</class>
-    <class kind="class">Readout</class>
-    <class kind="class">ParamComponent</class>
-    <class kind="class">HorizontalFader</class>
-    <class kind="class">Switch</class>
-    <class kind="class">Select</class>
-    <class kind="class">SynthesiserUsage</class>
   </compound>
   <compound kind="file">
     <name>gin_plugineditor.h</name>
@@ -2373,16 +2431,46 @@
     <class kind="class">ProcessorEditor</class>
   </compound>
   <compound kind="file">
+    <name>gin_pluginslider.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__pluginslider_8h.html</filename>
+    <class kind="class">PluginSlider</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_readout.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__readout_8h.html</filename>
+    <class kind="class">Readout</class>
+  </compound>
+  <compound kind="file">
     <name>gin_scaledplugineditor.h</name>
     <path>build/gin_plugin/components/</path>
     <filename>gin__scaledplugineditor_8h.html</filename>
     <class kind="class">ScaledPluginEditor</class>
   </compound>
   <compound kind="file">
+    <name>gin_select.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__select_8h.html</filename>
+    <class kind="class">Select</class>
+  </compound>
+  <compound kind="file">
     <name>gin_steplfocomponent.h</name>
     <path>build/gin_plugin/components/</path>
     <filename>gin__steplfocomponent_8h.html</filename>
     <class kind="class">StepLFOComponent</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_switch.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__switch_8h.html</filename>
+    <class kind="class">Switch</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_synthesiserusage.h</name>
+    <path>build/gin_plugin/components/</path>
+    <filename>gin__synthesiserusage_8h.html</filename>
+    <class kind="class">SynthesiserUsage</class>
   </compound>
   <compound kind="file">
     <name>gin_copperlookandfeel.h</name>
@@ -2410,6 +2498,12 @@
     <path>build/gin_plugin/lookandfeel/</path>
     <filename>gin__resources_8h.html</filename>
     <namespace>Resources</namespace>
+  </compound>
+  <compound kind="file">
+    <name>gin_midilearn.h</name>
+    <path>build/gin_plugin/plugin/</path>
+    <filename>gin__midilearn_8h.html</filename>
+    <class kind="class">MidiLearn</class>
   </compound>
   <compound kind="file">
     <name>gin_modmatrix.h</name>
@@ -5051,8 +5145,8 @@
       <type></type>
       <name>Catenary</name>
       <anchorfile>classCatenary.html</anchorfile>
-      <anchor>a28b6ec8aaf6dfdf75837416a83f42a51</anchor>
-      <arglist>(float x0, float y0, float x1, float y1, float addLength, int numIterations=1)</arglist>
+      <anchor>ae0cd3500d6612d5fd27f696a272f3ce3</anchor>
+      <arglist>(float x0, float y0, float x1, float y1, float addLength, int numIterations=1, bool screenCoords=false)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8361,6 +8455,189 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>GraphicEQ</name>
+    <filename>classGraphicEQ.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>NumBands</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands5</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aab800b9324c8e3416c77744dee4ea46b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands7</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa033ae5e38c9e88cc42dce62c1d0c1c82</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands10</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa56e3eb6f2656d5609ccf4ad9cef774d2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands15</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa2a1740878e5c784d34e1c64fe44fb893</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands31</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa4462f09d8f0d3a18766170ca4f962eca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands5</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aab800b9324c8e3416c77744dee4ea46b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands7</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa033ae5e38c9e88cc42dce62c1d0c1c82</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands10</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa56e3eb6f2656d5609ccf4ad9cef774d2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands15</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa2a1740878e5c784d34e1c64fe44fb893</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Bands31</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6d636078e63f2e681ecb6c82a700ab4aa4462f09d8f0d3a18766170ca4f962eca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GraphicEQ</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a05533020e1be064c0c410e933f229170</anchor>
+      <arglist>(NumBands bands=Bands31)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSampleRate</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a41f6507620c79ec6031ff01c23ce2874</anchor>
+      <arglist>(double sr)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setBlockSize</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a375250b31db13e58eb5382ce5776d0c2</anchor>
+      <arglist>(int blockSize)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setNumChannels</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a0e5c4eaec309380415698e85d0b71598</anchor>
+      <arglist>(int ch)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getNumBands</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a54bda930dad240db666ec2d85e8681ed</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getNumChannels</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a0c35a208137b65327ca809829db37698</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a90df6fe304bd92b8527a892ff3fea527</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setBandGain</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a43079e689277bc34a00613df6ff2802c</anchor>
+      <arglist>(int channel, int band, float gainDb)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getBandGain</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a2d072deb9cfc7dabd2b4615b3f197840</anchor>
+      <arglist>(int channel, int band) const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getBandFrequency</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>afc6301ea34724df0c92d63f0c760d67a</anchor>
+      <arglist>(int band) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setAllBandGains</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>ae0bdd5a520bf67e048f235aa41b98aa4</anchor>
+      <arglist>(int channel, const float *gains)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>flatten</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>ad09addf8ea9d34112291bb8786fbe07a</anchor>
+      <arglist>(int channel)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>flattenAll</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6a335368a2d9c43ce45d8d15f0d3e4b1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getFrequencyResponse</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a16e6c7cf1720c638bd5fc18eb788f299</anchor>
+      <arglist>(int channel, float frequency) const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getFrequencyResponseDb</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a6243cc785fb5c60d755ccd0cbf03533c</anchor>
+      <arglist>(int channel, float frequency) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>process</name>
+      <anchorfile>classGraphicEQ.html</anchorfile>
+      <anchor>a28934c6b3e288a0f6963fea7ef72b62a</anchor>
+      <arglist>(juce::AudioSampleBuffer &amp;buffer)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>HeaderButton</name>
     <filename>classHeaderButton.html</filename>
     <member kind="function">
@@ -8961,6 +9238,13 @@
       <anchorfile>classKnob.html</anchorfile>
       <anchor>a81a61f483cc29ceecd07a4599ee5163c</anchor>
       <arglist>(const SourceDetails &amp;dragSourceDetails) override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>allowClicksOn</name>
+      <anchorfile>classKnob.html</anchorfile>
+      <anchor>a472714f116792dfe539f5256a7b284b1</anchor>
+      <arglist>(const juce::Component &amp;c) override</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -11173,6 +11457,154 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>MidiLearn</name>
+    <filename>classMidiLearn.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MidiLearn</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a25883e10f2c69262c0d682ac2172dff4</anchor>
+      <arglist>(gin::Processor &amp;p)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~MidiLearn</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a079e3ca406effab455f563b762a653bf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSampleRate</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a6f9ea32f8ff71bfeadb923736f3799e5</anchor>
+      <arglist>(double sr)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMapping</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>ad69b940a5b969b009d7b35ba2213bb22</anchor>
+      <arglist>(int ccNumber, gin::Parameter *param)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clearMapping</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>ad851e08d4f14711650ab3f12aaedf8cd</anchor>
+      <arglist>(int ccNumber)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clearMapping</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>af6c449a098fdd401fa886e0559b8885d</anchor>
+      <arglist>(gin::Parameter *param)</arglist>
+    </member>
+    <member kind="function">
+      <type>gin::Parameter *</type>
+      <name>getMapping</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>ae2fef8ccddcf962463eee1a657ece4ea</anchor>
+      <arglist>(int ccNumber) const</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMappedCC</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a2a3c226ead68264204137d33ab0a41d7</anchor>
+      <arglist>(gin::Parameter *param) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>startLearning</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>af55190873048941146ad2582bb1bc50c</anchor>
+      <arglist>(gin::Parameter *param)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>cancelLearning</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a6da33c3a699287babe55dcae4786f09d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isLearning</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a6cea916e4a2cfa2b2c71b50923515fa7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>gin::Parameter *</type>
+      <name>getLearningParameter</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a6be2616d8cdc2ef5d58a08c0b435745c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>processBlock</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a7de3a766a34c843603ad3a19cb091a4a</anchor>
+      <arglist>(juce::MidiBuffer &amp;midi, int numSamples)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>loadState</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>ab0a1a22f8ae3e6c4de964ab24fac687c</anchor>
+      <arglist>(const juce::ValueTree &amp;vt)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>saveState</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a5f7f3287f632054c5dfe53475a396860</anchor>
+      <arglist>(juce::ValueTree &amp;vt)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isValidCC</name>
+      <anchorfile>classMidiLearn.html</anchorfile>
+      <anchor>a2b3401ccee226118e384c38428cd3ed6</anchor>
+      <arglist>(int ccNumber)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>MidiLearnOverlay</name>
+    <filename>classMidiLearnOverlay.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MidiLearnOverlay</name>
+      <anchorfile>classMidiLearnOverlay.html</anchorfile>
+      <anchor>a239ff9216d85f56375a79ae6b2605064</anchor>
+      <arglist>(MidiLearn &amp;ml)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~MidiLearnOverlay</name>
+      <anchorfile>classMidiLearnOverlay.html</anchorfile>
+      <anchor>aea0c40c12ab565f775efbc5a42e33202</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>paint</name>
+      <anchorfile>classMidiLearnOverlay.html</anchorfile>
+      <anchor>a107977ae1009350d6b41f4650c4acb88</anchor>
+      <arglist>(juce::Graphics &amp;g) override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hitTest</name>
+      <anchorfile>classMidiLearnOverlay.html</anchorfile>
+      <anchor>a3b7e150751ff377b84ff22a7fa6b9326</anchor>
+      <arglist>(int x, int y) override</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>ModCurveButton</name>
     <filename>classModCurveButton.html</filename>
     <member kind="function">
@@ -11865,6 +12297,38 @@
       <arglist>() override</arglist>
     </member>
   </compound>
+  <compound kind="class">
+    <name>ModOverlay</name>
+    <filename>classModOverlay.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ModOverlay</name>
+      <anchorfile>classModOverlay.html</anchorfile>
+      <anchor>aa8ce76759f51abe5a9f3ce3e220c1232</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~ModOverlay</name>
+      <anchorfile>classModOverlay.html</anchorfile>
+      <anchor>a36a00b692901d611dad3d0eec103468e</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>paint</name>
+      <anchorfile>classModOverlay.html</anchorfile>
+      <anchor>a4e710992ae3573c19ef828479f4bc7f9</anchor>
+      <arglist>(juce::Graphics &amp;g) override</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hitTest</name>
+      <anchorfile>classModOverlay.html</anchorfile>
+      <anchor>a1efadc5853ff4bf3b0203b75c618dddb</anchor>
+      <arglist>(int x, int y) override</arglist>
+    </member>
+  </compound>
   <compound kind="struct">
     <name>ModSrcId</name>
     <filename>structModSrcId.html</filename>
@@ -12088,10 +12552,31 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>mouseUp</name>
+      <anchorfile>classModulationSourceButton.html</anchorfile>
+      <anchor>a5045f460277ec0e6683d0ce83a5ddbbc</anchor>
+      <arglist>(const juce::MouseEvent &amp;) override</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setSource</name>
       <anchorfile>classModulationSourceButton.html</anchorfile>
       <anchor>a94555224817c529b26e4821706c97fcd</anchor>
       <arglist>(ModSrcId src, bool p)</arglist>
+    </member>
+    <member kind="function">
+      <type>ModSrcId</type>
+      <name>getSource</name>
+      <anchorfile>classModulationSourceButton.html</anchorfile>
+      <anchor>ae97d6793e2fc77db49acfa8e48745f9e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isDragging</name>
+      <anchorfile>classModulationSourceButton.html</anchorfile>
+      <anchor>ac45f47b9bbd564c658ae011f70fdc2fd</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -13469,6 +13954,13 @@
       <arglist>(Parameter *parameter)</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>~ParamComponent</name>
+      <anchorfile>classParamComponent.html</anchorfile>
+      <anchor>a7ce52df526dce7a8886f409c35c9fb9b</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
       <type>juce::String</type>
       <name>getUid</name>
       <anchorfile>classParamComponent.html</anchorfile>
@@ -13481,6 +13973,13 @@
       <anchorfile>classParamComponent.html</anchorfile>
       <anchor>a1e7f1920fda098d8556ab3262b6bfa8e</anchor>
       <arglist>(const juce::String &amp;newTooltip) override</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>allowClicksOn</name>
+      <anchorfile>classParamComponent.html</anchorfile>
+      <anchor>a863c8dec1681b3846db75e66f3b80949</anchor>
+      <arglist>(const juce::Component &amp;)</arglist>
     </member>
     <member kind="variable" protection="protected">
       <type>Parameter *</type>
@@ -13564,6 +14063,20 @@
       <name>getModMatrix</name>
       <anchorfile>classParameter.html</anchorfile>
       <anchor>a03214a30df7502114df477b14dda12e3</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMidiLearn</name>
+      <anchorfile>classParameter.html</anchorfile>
+      <anchor>a2418b183a8238db7e812fe1507d08158</anchor>
+      <arglist>(MidiLearn *m)</arglist>
+    </member>
+    <member kind="function">
+      <type>MidiLearn *</type>
+      <name>getMidiLearn</name>
+      <anchorfile>classParameter.html</anchorfile>
+      <anchor>ac4ca5df086c42218ea62a1880e97f78d</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" virtualness="virtual">
@@ -13914,6 +14427,13 @@
       <name>modMatrix</name>
       <anchorfile>classParameter.html</anchorfile>
       <anchor>a30f079fa8ecf5c5cd5735777e1ba74c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>MidiLearn *</type>
+      <name>midiLearn</name>
+      <anchorfile>classParameter.html</anchorfile>
+      <anchor>a74dc877bc25d373c704486b30e586a78</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -15383,6 +15903,13 @@
       <anchor>a09c3b671e19fb6ba690ace06cca55aa9</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable">
+      <type>std::unique_ptr&lt; MidiLearn &gt;</type>
+      <name>midiLearn</name>
+      <anchorfile>classProcessor.html</anchorfile>
+      <anchor>a8bb54bfcd02cdc7e6c2097c63de7c6b5</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
       <name>stateUpdated</name>
@@ -15582,6 +16109,13 @@
       <name>titleBar</name>
       <anchorfile>classProcessorEditor.html</anchorfile>
       <anchor>a765fed46b8f886ab4e6306124110ed68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>std::unique_ptr&lt; MidiLearnOverlay &gt;</type>
+      <name>midiLearnOverlay</name>
+      <anchorfile>classProcessorEditor.html</anchorfile>
+      <anchor>aff2e47042ee4f7765655e9eb9b6d077b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -15830,6 +16364,13 @@
       <anchor>a8fa62952828b42c7e931f6a0eb61ce7d</anchor>
       <arglist>() &amp;&amp;</arglist>
     </member>
+    <member kind="function">
+      <type>ProcessorOptions</type>
+      <name>withMidiLearn</name>
+      <anchorfile>classProcessorOptions.html</anchorfile>
+      <anchor>a898de378f73c72866d7578cf18016a34</anchor>
+      <arglist>() &amp;&amp;</arglist>
+    </member>
     <member kind="variable">
       <type>juce::String</type>
       <name>pluginName</name>
@@ -15905,6 +16446,13 @@
       <name>useNewsChecker</name>
       <anchorfile>classProcessorOptions.html</anchorfile>
       <anchor>a050f3bfa588e3045b3a914715c961bc3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>hasMidiLearn</name>
+      <anchorfile>classProcessorOptions.html</anchorfile>
+      <anchor>a0841fe0d051987f7b671a0e26ca699a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -17609,6 +18157,12 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
+      <name>gridColourId</name>
+      <anchorfile>classSpectrumAnalyzer.html</anchorfile>
+      <anchor>a544037e48573aa27a58d3ebfadfe16fcad4eea70ad67692b7a32817d83eae1361</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
       <name>lineColourId</name>
       <anchorfile>classSpectrumAnalyzer.html</anchorfile>
       <anchor>a544037e48573aa27a58d3ebfadfe16fca897546a6575db6418f7c69eba965f5a1</anchor>
@@ -17630,6 +18184,12 @@
       <name>envelopeColourId</name>
       <anchorfile>classSpectrumAnalyzer.html</anchorfile>
       <anchor>a544037e48573aa27a58d3ebfadfe16fca3e235c1d28415226b375b369637e123f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>gridColourId</name>
+      <anchorfile>classSpectrumAnalyzer.html</anchorfile>
+      <anchor>a544037e48573aa27a58d3ebfadfe16fcad4eea70ad67692b7a32817d83eae1361</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -17680,6 +18240,13 @@
       <anchorfile>classSpectrumAnalyzer.html</anchorfile>
       <anchor>a8c634a301ae12f33a974d1dcf714153b</anchor>
       <arglist>(float smoothing)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDrawGrid</name>
+      <anchorfile>classSpectrumAnalyzer.html</anchorfile>
+      <anchor>ae52ea088d96dd010924a25e265b5fcaa</anchor>
+      <arglist>(bool on)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -21831,15 +22398,18 @@
     <class kind="class">GateEffectComponent</class>
     <class kind="class">HeaderItem</class>
     <class kind="class">HeaderRow</class>
+    <class kind="class">HorizontalFader</class>
     <class kind="class">Knob</class>
     <class kind="class">LFOComponent</class>
-    <class kind="class">ModulationSourceButton</class>
-    <class kind="class">ModulationDepthSlider</class>
-    <class kind="class">ModulationOverview</class>
-    <class kind="class">ModSrcListBox</class>
+    <class kind="class">MidiLearnOverlay</class>
     <class kind="class">ModCurveButton</class>
     <class kind="class">ModMatrixBox</class>
     <class kind="class">ModMatrixBox::Row::DepthSlider</class>
+    <class kind="class">ModOverlay</class>
+    <class kind="class">ModSrcListBox</class>
+    <class kind="class">ModulationDepthSlider</class>
+    <class kind="class">ModulationOverview</class>
+    <class kind="class">ModulationSourceButton</class>
     <class kind="class">MSEGComponent</class>
     <class kind="class">MultiParamComponent</class>
     <class kind="class">ParamHeader</class>
@@ -21847,6 +22417,7 @@
     <class kind="class">ParamBox</class>
     <class kind="class">ParamArea</class>
     <class kind="class">BoxArea</class>
+    <class kind="class">ParamComponent</class>
     <class kind="class">PatchBrowser</class>
     <class kind="struct">PatchBrowser::AuthorsModel</class>
     <class kind="struct">PatchBrowser::TagsModel</class>
@@ -21856,20 +22427,18 @@
     <class kind="class">SVGPluginButton</class>
     <class kind="class">PowerButton</class>
     <class kind="class">PluginComboBox</class>
-    <class kind="class">PluginSlider</class>
-    <class kind="class">Readout</class>
-    <class kind="class">ParamComponent</class>
-    <class kind="class">HorizontalFader</class>
-    <class kind="class">Switch</class>
-    <class kind="class">Select</class>
-    <class kind="class">SynthesiserUsage</class>
     <class kind="class">UpdateChecker</class>
     <class kind="class">NewsChecker</class>
     <class kind="class">ProcessorEditorBase</class>
     <class kind="class">TitleBar</class>
     <class kind="class">ProcessorEditor</class>
+    <class kind="class">PluginSlider</class>
+    <class kind="class">Readout</class>
     <class kind="class">ScaledPluginEditor</class>
+    <class kind="class">Select</class>
     <class kind="class">StepLFOComponent</class>
+    <class kind="class">Switch</class>
+    <class kind="class">SynthesiserUsage</class>
     <member kind="function">
       <type>void</type>
       <name>gradientRect</name>
@@ -21987,6 +22556,7 @@
     <class kind="class">FastMath</class>
     <class kind="class">Filter</class>
     <class kind="class">GateEffect</class>
+    <class kind="class">GraphicEQ</class>
     <class kind="class">LevelTracker</class>
     <class kind="class">LFO</class>
     <class kind="struct">LFO::Parameters</class>
@@ -22860,6 +23430,7 @@
     <name>gin_plugin-plugin</name>
     <title>plugin</title>
     <filename>group__gin__plugin-plugin.html</filename>
+    <class kind="class">MidiLearn</class>
     <class kind="struct">ModSrcId</class>
     <class kind="struct">ModDstId</class>
     <class kind="class">ModVoice</class>
