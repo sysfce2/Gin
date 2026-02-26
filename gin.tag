@@ -9892,10 +9892,24 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setLayouts</name>
+      <anchorfile>classLayoutSupport.html</anchorfile>
+      <anchor>ab449d2cd65951c88c71a0cce6c9cad9a</anchor>
+      <arglist>(const juce::StringArray &amp;rawJson)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setConstant</name>
       <anchorfile>classLayoutSupport.html</anchorfile>
       <anchor>a8de7426be92c062971aad2008302073f</anchor>
       <arglist>(const juce::String &amp;name, int value)</arglist>
+    </member>
+    <member kind="function">
+      <type>juce::String</type>
+      <name>findContent</name>
+      <anchorfile>classLayoutSupport.html</anchorfile>
+      <anchor>afa4fe5fbbe931c9e0a73eaf22c164422</anchor>
+      <arglist>(const juce::String &amp;name)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static void</type>
@@ -9910,13 +9924,6 @@
       <anchorfile>classLayoutSupport.html</anchorfile>
       <anchor>ab81e49461b2cd7066b40017c67719197</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>juce::String</type>
-      <name>findContent</name>
-      <anchorfile>classLayoutSupport.html</anchorfile>
-      <anchor>afa4fe5fbbe931c9e0a73eaf22c164422</anchor>
-      <arglist>(const juce::String &amp;name)</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>juce::Component *</type>
@@ -22662,6 +22669,21 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>gin_dsp-components</name>
+    <title>components</title>
+    <filename>group__gin__dsp-components.html</filename>
+    <class kind="class">AudioSamplerBufferComponent</class>
+    <class kind="class">AudioSamplerBufferComponent::ScopedViewState</class>
+    <class kind="class">DynamicsMeter</class>
+    <class kind="class">LevelMeter</class>
+    <class kind="class">MidiFileComponent</class>
+    <class kind="class">SpectrumAnalyzer</class>
+    <class kind="class">TriggeredScope</class>
+    <class kind="class">WaveformComponent</class>
+    <class kind="class">WavetableComponent</class>
+    <class kind="class">XYScope</class>
+  </compound>
+  <compound kind="group">
     <name>gin_plugin-components</name>
     <title>components</title>
     <filename>group__gin__plugin-components.html</filename>
@@ -22722,21 +22744,6 @@
       <anchor>gae617c6797d9252a57e49dc7bef2f487b</anchor>
       <arglist>(juce::Graphics &amp;g, juce::Rectangle&lt; int &gt; rc, juce::Colour c1, juce::Colour c2)</arglist>
     </member>
-  </compound>
-  <compound kind="group">
-    <name>gin_dsp-components</name>
-    <title>components</title>
-    <filename>group__gin__dsp-components.html</filename>
-    <class kind="class">AudioSamplerBufferComponent</class>
-    <class kind="class">AudioSamplerBufferComponent::ScopedViewState</class>
-    <class kind="class">DynamicsMeter</class>
-    <class kind="class">LevelMeter</class>
-    <class kind="class">MidiFileComponent</class>
-    <class kind="class">SpectrumAnalyzer</class>
-    <class kind="class">TriggeredScope</class>
-    <class kind="class">WaveformComponent</class>
-    <class kind="class">WavetableComponent</class>
-    <class kind="class">XYScope</class>
   </compound>
   <compound kind="group">
     <name>gin_gui-components</name>
@@ -23159,25 +23166,6 @@
     <title>gin_webp</title>
     <filename>group__gin__webp.html</filename>
     <subgroup>gin_webp-formats</subgroup>
-  </compound>
-  <compound kind="group">
-    <name>gin_gui-images</name>
-    <title>images</title>
-    <filename>group__gin__gui-images.html</filename>
-    <member kind="function">
-      <type>juce::Image</type>
-      <name>rasterizeSVG</name>
-      <anchorfile>group__gin__gui-images.html</anchorfile>
-      <anchor>gaad1e06e3c606f89456dac559e0d417a7</anchor>
-      <arglist>(juce::String svgText, int w, int h)</arglist>
-    </member>
-    <member kind="function">
-      <type>juce::Path</type>
-      <name>parseSVGPath</name>
-      <anchorfile>group__gin__gui-images.html</anchorfile>
-      <anchor>ga781250a0ec9422dc8c7365cf6b9935ee</anchor>
-      <arglist>(const juce::String &amp;txt)</arglist>
-    </member>
   </compound>
   <compound kind="group">
     <name>gin_graphics-images</name>
@@ -23657,6 +23645,25 @@
       <anchorfile>group__gin__graphics-images.html</anchorfile>
       <anchor>ga6ca2bcca3726d2fa3fc004a1e8bd7813</anchor>
       <arglist>(uint8_t A, uint8_t B, float O)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>gin_gui-images</name>
+    <title>images</title>
+    <filename>group__gin__gui-images.html</filename>
+    <member kind="function">
+      <type>juce::Image</type>
+      <name>rasterizeSVG</name>
+      <anchorfile>group__gin__gui-images.html</anchorfile>
+      <anchor>gaad1e06e3c606f89456dac559e0d417a7</anchor>
+      <arglist>(juce::String svgText, int w, int h)</arglist>
+    </member>
+    <member kind="function">
+      <type>juce::Path</type>
+      <name>parseSVGPath</name>
+      <anchorfile>group__gin__gui-images.html</anchorfile>
+      <anchor>ga781250a0ec9422dc8c7365cf6b9935ee</anchor>
+      <arglist>(const juce::String &amp;txt)</arglist>
     </member>
   </compound>
   <compound kind="group">
