@@ -56,7 +56,7 @@ var searchData=
   ['mode_53',['mode',['../classEnvelopeDetector.html#aed1a748db06a14d27716c88b0fa1bdb4',1,'EnvelopeDetector::Mode'],['../classEnvelopeDetector.html#a1804f11c1918ee0aeee94093a3057415',1,'EnvelopeDetector::mode']]],
   ['modfunction_54',['ModFunction',['../group__gin__plugin-plugin.html#gaf6305b7a895acc484a8df21f83bff9f4',1,'gin_imodmatrix.h']]],
   ['modindex_55',['modIndex',['../classParameter.html#a7310a6224d36ab27a14237aab7d8fadd',1,'Parameter']]],
-  ['modmatrix_56',['modmatrix',['../classModMatrix.html',1,'ModMatrix'],['../classModMatrix.html#a923354065c39928704876d0b29e568c9',1,'ModMatrix::ModMatrix()'],['../classParameter.html#a7e184289e8217f43915cda95865a809d',1,'Parameter::modMatrix']]],
+  ['modmatrix_56',['modmatrix',['../classModMatrix.html',1,'ModMatrix'],['../classParameter.html#a7e184289e8217f43915cda95865a809d',1,'Parameter::modMatrix'],['../classModMatrix.html#a923354065c39928704876d0b29e568c9',1,'ModMatrix::ModMatrix()']]],
   ['modmatrixbox_57',['modmatrixbox',['../classModMatrixBox.html#a8fa735d73b25ad181c5837d747729de7',1,'ModMatrixBox::ModMatrixBox()'],['../classModMatrixBox.html',1,'ModMatrixBox']]],
   ['modmatrixchanged_58',['modmatrixchanged',['../classIModMatrix_1_1Listener.html#a97c03785445facab7ea3ae81784f4e43',1,'IModMatrix::Listener::modMatrixChanged()'],['../classKnob.html#acb56b6928ff9dd975f80aee0ce6840c9',1,'Knob::modMatrixChanged()']]],
   ['modoverlay_59',['modoverlay',['../classModOverlay.html#aa8ce76759f51abe5a9f3ce3e220c1232',1,'ModOverlay::ModOverlay()'],['../classModOverlay.html',1,'ModOverlay']]],
