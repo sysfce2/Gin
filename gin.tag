@@ -1024,6 +1024,17 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>gin_bitcrusher.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__bitcrusher_8h.html</filename>
+    <class kind="class">BitCrusher</class>
+  </compound>
+  <compound kind="file">
+    <name>gin_bitcrusher.test.h</name>
+    <path>build/gin_dsp/dsp/</path>
+    <filename>gin__bitcrusher_8test_8h.html</filename>
+  </compound>
+  <compound kind="file">
     <name>gin_dcblocker.h</name>
     <path>build/gin_dsp/dsp/</path>
     <filename>gin__dcblocker_8h.html</filename>
@@ -4898,6 +4909,52 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>BitCrusher</name>
+    <filename>classBitCrusher.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>BitCrusher</name>
+      <anchorfile>classBitCrusher.html</anchorfile>
+      <anchor>afc9fcb19710947af7090846e312251e4</anchor>
+      <arglist>(int maxChannels_=2, int maxBlockSize_=4096)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSampleRate</name>
+      <anchorfile>classBitCrusher.html</anchorfile>
+      <anchor>a5382626ff139cace3acf01dde5f37540</anchor>
+      <arglist>(double sr)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setParams</name>
+      <anchorfile>classBitCrusher.html</anchorfile>
+      <anchor>a8cdee2d1ebdd12d292bb32182b265d4c</anchor>
+      <arglist>(float bitDepth, float rateHz, bool dirtyMode)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>classBitCrusher.html</anchorfile>
+      <anchor>a6551786123158d080de63536cbf6b4f7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getLatencySamples</name>
+      <anchorfile>classBitCrusher.html</anchorfile>
+      <anchor>af38d34a081d9a63ace0fd280efa9e158</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>process</name>
+      <anchorfile>classBitCrusher.html</anchorfile>
+      <anchor>a996de4db903aee3f3a9c05bfee4eeccb</anchor>
+      <arglist>(juce::AudioSampleBuffer &amp;buffer)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>BLLTVoicedStereoOscillator</name>
     <filename>classBLLTVoicedStereoOscillator.html</filename>
     <base>VoicedStereoOscillator&lt; StereoOscillator, VoicedStereoOscillatorParams &gt;</base>
@@ -6532,6 +6589,13 @@
       <anchorfile>classDynamics.html</anchorfile>
       <anchor>a10395d0e46c4387190b783c0090545c2</anchor>
       <arglist>(juce::AudioSampleBuffer &amp;buffer, juce::AudioSampleBuffer *envelopeOut=nullptr)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>process</name>
+      <anchorfile>classDynamics.html</anchorfile>
+      <anchor>abf0a890841ff6f09dfd47f2083ad6890</anchor>
+      <arglist>(juce::AudioSampleBuffer &amp;buffer, const juce::AudioSampleBuffer &amp;sidechain, juce::AudioSampleBuffer *envelopeOut=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>const LevelTracker &amp;</type>
@@ -16672,10 +16736,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
-      <type>TitleBar</type>
+      <type>std::unique_ptr&lt; TitleBar &gt;</type>
       <name>titleBar</name>
       <anchorfile>classProcessorEditor.html</anchorfile>
-      <anchor>a765fed46b8f886ab4e6306124110ed68</anchor>
+      <anchor>ac12a4cb6f3c3b36b137360fc690f71b6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
@@ -16933,6 +16997,13 @@
     </member>
     <member kind="function">
       <type>ProcessorOptions</type>
+      <name>withoutTitleBar</name>
+      <anchorfile>classProcessorOptions.html</anchorfile>
+      <anchor>a1c35bd335794025146788b8c975d59d9</anchor>
+      <arglist>() &amp;&amp;</arglist>
+    </member>
+    <member kind="function">
+      <type>ProcessorOptions</type>
       <name>withMidiLearn</name>
       <anchorfile>classProcessorOptions.html</anchorfile>
       <anchor>a898de378f73c72866d7578cf18016a34</anchor>
@@ -16978,6 +17049,13 @@
       <name>updatesURL</name>
       <anchorfile>classProcessorOptions.html</anchorfile>
       <anchor>a71da3924118b341db1586b4b4526f7d8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>juce::String</type>
+      <name>newsURL</name>
+      <anchorfile>classProcessorOptions.html</anchorfile>
+      <anchor>a82b35bdac7c91ea475eddd8880e19560</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -17034,6 +17112,13 @@
       <name>usePresetMetadata</name>
       <anchorfile>classProcessorOptions.html</anchorfile>
       <anchor>ae3998274b8d855632a7d2f2d4b13b96b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>useTitleBar</name>
+      <anchorfile>classProcessorOptions.html</anchorfile>
+      <anchor>ab724916c3c24f21111cd7950ab459fcd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -23042,21 +23127,6 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>gin_dsp-components</name>
-    <title>components</title>
-    <filename>group__gin__dsp-components.html</filename>
-    <class kind="class">AudioSamplerBufferComponent</class>
-    <class kind="class">AudioSamplerBufferComponent::ScopedViewState</class>
-    <class kind="class">DynamicsMeter</class>
-    <class kind="class">LevelMeter</class>
-    <class kind="class">MidiFileComponent</class>
-    <class kind="class">SpectrumAnalyzer</class>
-    <class kind="class">TriggeredScope</class>
-    <class kind="class">WaveformComponent</class>
-    <class kind="class">WavetableComponent</class>
-    <class kind="class">XYScope</class>
-  </compound>
-  <compound kind="group">
     <name>gin_plugin-components</name>
     <title>components</title>
     <filename>group__gin__plugin-components.html</filename>
@@ -23117,6 +23187,21 @@
       <anchor>gae617c6797d9252a57e49dc7bef2f487b</anchor>
       <arglist>(juce::Graphics &amp;g, juce::Rectangle&lt; int &gt; rc, juce::Colour c1, juce::Colour c2)</arglist>
     </member>
+  </compound>
+  <compound kind="group">
+    <name>gin_dsp-components</name>
+    <title>components</title>
+    <filename>group__gin__dsp-components.html</filename>
+    <class kind="class">AudioSamplerBufferComponent</class>
+    <class kind="class">AudioSamplerBufferComponent::ScopedViewState</class>
+    <class kind="class">DynamicsMeter</class>
+    <class kind="class">LevelMeter</class>
+    <class kind="class">MidiFileComponent</class>
+    <class kind="class">SpectrumAnalyzer</class>
+    <class kind="class">TriggeredScope</class>
+    <class kind="class">WaveformComponent</class>
+    <class kind="class">WavetableComponent</class>
+    <class kind="class">XYScope</class>
   </compound>
   <compound kind="group">
     <name>gin_gui-components</name>
@@ -23183,6 +23268,7 @@
     <class kind="class">WetDryMix</class>
     <class kind="class">BandLimitedLookupTable</class>
     <class kind="class">BandLimitedLookupTables</class>
+    <class kind="class">BitCrusher</class>
     <class kind="class">DCBlocker</class>
     <class kind="class">DelayLine</class>
     <class kind="class">AirWindowsDistortion</class>
