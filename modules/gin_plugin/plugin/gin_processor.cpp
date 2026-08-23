@@ -146,10 +146,10 @@ static gin::Parameter::ConversionFunction wrapTextFunction (std::function<juce::
     if (textFunction == nullptr)
         return nullptr;
 
-    return [textFunction = std::move (textFunction)] (const gin::Parameter& p, const std::variant<float, juce::String>& in) -> std::variant<float, juce::String>
+    return [fn = std::move (textFunction)] (const gin::Parameter& p, const std::variant<float, juce::String>& in) -> std::variant<float, juce::String>
     {
         if (auto v = std::get_if<float> (&in))
-            return textFunction (p, *v);
+            return fn (p, *v);
 
         return std::get<juce::String> (in).getFloatValue();
     };
