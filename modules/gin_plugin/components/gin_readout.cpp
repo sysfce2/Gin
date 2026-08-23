@@ -40,7 +40,7 @@ void Readout::textWasEdited()
 {
     if (applyValue (getText()))
     {
-        float v = getText().getFloatValue();
+        float v = parameter->getUserRange().convertFrom0to1 (parameter->getValueForText (getText()));
         parameter->setUserValueAsUserAction (v);
     }
     repaint();

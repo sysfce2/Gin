@@ -71,6 +71,7 @@
 #include <gin_graphics/gin_graphics.h>
 
 #include <map>
+#include <variant>
 
 namespace juce
 {

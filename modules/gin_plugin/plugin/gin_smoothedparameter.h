@@ -12,8 +12,8 @@ public:
     SmoothedParameter (Processor& p, juce::String uid_, juce::String name_, juce::String shortName_, juce::String label_,
                        float minValue_, float maxValue_,
                        float intervalValue_, float defaultValue_, float skewFactor_ = 1.0f,
-                       std::function<juce::String (const gin::Parameter&, float)> textFunction_ = nullptr)
-        : Parameter (p, uid_, name_, shortName_, label_, minValue_, maxValue_, intervalValue_, defaultValue_, skewFactor_, textFunction_)
+                       gin::Parameter::ConversionFunction conversionFunction_ = nullptr)
+        : Parameter (p, uid_, name_, shortName_, label_, minValue_, maxValue_, intervalValue_, defaultValue_, skewFactor_, conversionFunction_)
     {
         smoother.setValue (range.convertTo0to1 (value.load (std::memory_order_relaxed)));
         smoother.snapToValue();
@@ -21,8 +21,8 @@ public:
 
     SmoothedParameter (Processor& p, juce::String uid_, juce::String name_, juce::String shortName_, juce::String label_,
                        juce::NormalisableRange<float> range_, float defaultValue_,
-                       std::function<juce::String (const gin::Parameter&, float)> textFunction_ = nullptr)
-        : Parameter (p, uid_, name_, shortName_, label_, range_, defaultValue_, textFunction_)
+                       gin::Parameter::ConversionFunction conversionFunction_ = nullptr)
+        : Parameter (p, uid_, name_, shortName_, label_, range_, defaultValue_, conversionFunction_)
     {
         smoother.setValue (range.convertTo0to1 (value.load (std::memory_order_relaxed)));
         smoother.snapToValue();

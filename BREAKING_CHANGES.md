@@ -4,6 +4,29 @@ Behavioral and API changes that may affect plugins built on Gin. Most recent fir
 
 ## August 2026
 
+### `gin::Parameter` text functions replaced by bidirectional conversion functions
+
+The `gin::Parameter` and `gin::SmoothedParameter` constructors no longer take a
+`textFunction` (`std::function<juce::String (const Parameter&, float)>`). They instead
+take a `Parameter::ConversionFunction`:
+
+```cpp
+std::function<std::variant<float, juce::String> (const Parameter&, const std::variant<float, juce::String>&)>
+```
+
+The conversion function works in both directions: called with a float it returns the
+display text for that user value, called with a string it returns the user value for
+that text. `Parameter::getValueForText` now uses it, so text typed into host automation
+lanes and UI text editors (`Readout`) maps back to the correct value for parameters
+with custom display scaling — previously the typed text was parsed as a plain float,
+ignoring any custom mapping.
+
+The `Processor` API is unchanged: the `addExtParam` / `addIntParam` / `createParam`
+overloads taking a `textFunction` still exist and wrap it in a conversion function
+that parses text with a plain float parse (the old behavior). New overloads take a
+`Parameter::ConversionFunction` directly. Only code constructing `Parameter` /
+`SmoothedParameter` directly with a text function needs updating.
+
 ### Wavetable oscillators are ~6 dB louder (`BandLimitedLookupTable::loadFromBuffer`)
 
 Commit `b3393cb471` fixed a bug in the FFT-based `loadFromBuffer` where band-limited

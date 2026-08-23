@@ -136,10 +136,34 @@ void Processor::addPluginParameter (gin::Parameter* p)
         p->setMidiLearn (midiLearn.get());
 }
 
+// Wraps a value to text function in a bidirectional conversion function, converting
+// text to value with a plain float parse
+static gin::Parameter::ConversionFunction wrapTextFunction (std::function<juce::String (const gin::Parameter&, float)> textFunction)
+{
+    if (textFunction == nullptr)
+        return nullptr;
+
+    return [textFunction = std::move (textFunction)] (const gin::Parameter& p, const std::variant<float, juce::String>& in) -> std::variant<float, juce::String>
+    {
+        if (auto v = std::get_if<float> (&in))
+            return textFunction (p, *v);
+
+        return std::get<juce::String> (in).getFloatValue();
+    };
+}
+
 std::unique_ptr<gin::Parameter> Processor::createParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
                                                         juce::NormalisableRange<float> range, float defaultValue,
                                                         SmoothingType st,
                                                         std::function<juce::String (const gin::Parameter&, float)> textFunction)
+{
+    return createParam (uid, name, shortName, label, range, defaultValue, st, wrapTextFunction (std::move (textFunction)));
+}
+
+std::unique_ptr<gin::Parameter> Processor::createParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
+                                                        juce::NormalisableRange<float> range, float defaultValue,
+                                                        SmoothingType st,
+                                                        gin::Parameter::ConversionFunction conversionFunction)
 {
     std::unique_ptr<gin::Parameter> p;
 
@@ -147,24 +171,43 @@ std::unique_ptr<gin::Parameter> Processor::createParam (juce::String uid, juce::
     {
         if (st.type == SmoothingType::linear)
         {
-            auto sp = new gin::SmoothedParameter<ValueSmoother<float>> (*this, uid, name, shortName, label, range, defaultValue, textFunction);
+            auto sp = new gin::SmoothedParameter<ValueSmoother<float>> (*this, uid, name, shortName, label, range, defaultValue, conversionFunction);
             sp->setSmoothingTime (st.time);
             p = std::unique_ptr<gin::Parameter> (sp);
         }
         else if (st.type == SmoothingType::eased)
         {
-            auto sp = new gin::SmoothedParameter<EasedValueSmoother<float>> (*this, uid, name, shortName, label, range, defaultValue, textFunction);
+            auto sp = new gin::SmoothedParameter<EasedValueSmoother<float>> (*this, uid, name, shortName, label, range, defaultValue, conversionFunction);
             sp->setSmoothingTime (st.time);
             p = std::unique_ptr<gin::Parameter> (sp);
         }
     }
     else
     {
-        p = std::make_unique<gin::Parameter> (*this, uid, name, shortName, label, range, defaultValue, textFunction);
+        p = std::make_unique<gin::Parameter> (*this, uid, name, shortName, label, range, defaultValue, conversionFunction);
     }
 
     jassert (p != nullptr);
     return p;
+}
+
+gin::Parameter* Processor::registerIntParam (std::unique_ptr<gin::Parameter> p)
+{
+    if (p == nullptr)
+        return nullptr;
+
+    jassert (! parameterMap.contains (p->getUid()));
+
+    auto rawPtr = p.get();
+    p->setInternal (true);
+    allParameters.add (rawPtr);
+    parameterMap[p->getUid()] = rawPtr;
+
+    if (midiLearn != nullptr)
+        rawPtr->setMidiLearn (midiLearn.get());
+
+    internalParameters.add (p.release());
+    return rawPtr;
 }
 
 gin::Parameter* Processor::addIntParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
@@ -172,22 +215,15 @@ gin::Parameter* Processor::addIntParam (juce::String uid, juce::String name, juc
                                         SmoothingType st,
                                         std::function<juce::String (const gin::Parameter&, float)> textFunction)
 {
-    jassert (! parameterMap.contains (uid));
+    return registerIntParam (createParam (uid, name, shortName, label, range, defaultValue, st, textFunction));
+}
 
-    if (auto p = createParam (uid, name, shortName, label, range, defaultValue, st, textFunction))
-    {
-        auto rawPtr = p.get();
-        p->setInternal (true);
-        allParameters.add (rawPtr);
-        parameterMap[p->getUid()] = rawPtr;
-
-        if (midiLearn != nullptr)
-            rawPtr->setMidiLearn (midiLearn.get());
-
-        internalParameters.add (p.release());
-        return rawPtr;
-    }
-    return nullptr;
+gin::Parameter* Processor::addIntParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
+                                        juce::NormalisableRange<float> range, float defaultValue,
+                                        SmoothingType st,
+                                        gin::Parameter::ConversionFunction conversionFunction)
+{
+    return registerIntParam (createParam (uid, name, shortName, label, range, defaultValue, st, std::move (conversionFunction)));
 }
 
 void Processor::setUseParamGroups (bool b)
@@ -195,38 +231,50 @@ void Processor::setUseParamGroups (bool b)
     useParamGroups = b;
 }
 
+gin::Parameter* Processor::registerExtParam (std::unique_ptr<gin::Parameter> p)
+{
+    if (p == nullptr)
+        return nullptr;
+
+    jassert (! parameterMap.contains (p->getUid()));
+
+    auto rawPtr = p.get();
+    allParameters.add (rawPtr);
+    parameterMap[p->getUid()] = rawPtr;
+
+    if (midiLearn != nullptr)
+        rawPtr->setMidiLearn (midiLearn.get());
+
+    if (useParamGroups)
+    {
+        // Caller is responsible for adding to a group which will take ownership
+        p.release();
+    }
+    else
+    {
+       #if BUILD_INTERNAL_PLUGINS
+        addHostedParameter (std::move (p));
+       #else
+        addParameter (p.release());
+       #endif
+    }
+    return rawPtr;
+}
+
 gin::Parameter* Processor::addExtParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
                                         juce::NormalisableRange<float> range, float defaultValue,
                                         SmoothingType st,
                                         std::function<juce::String (const gin::Parameter&, float)> textFunction)
 {
-    jassert (! parameterMap.contains (uid));
+    return registerExtParam (createParam (uid, name, shortName, label, range, defaultValue, st, textFunction));
+}
 
-    if (auto p = createParam (uid, name, shortName, label, range, defaultValue, st, textFunction))
-    {
-        auto rawPtr = p.get();
-        allParameters.add (rawPtr);
-        parameterMap[p->getUid()] = rawPtr;
-
-        if (midiLearn != nullptr)
-            rawPtr->setMidiLearn (midiLearn.get());
-
-        if (useParamGroups)
-        {
-            // Caller is responsible for adding to a group which will take ownership
-            p.release();
-        }
-        else
-        {
-           #if BUILD_INTERNAL_PLUGINS
-            addHostedParameter (std::move (p));
-           #else
-            addParameter (p.release());
-           #endif
-        }
-        return rawPtr;
-    }
-    return nullptr;
+gin::Parameter* Processor::addExtParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
+                                        juce::NormalisableRange<float> range, float defaultValue,
+                                        SmoothingType st,
+                                        gin::Parameter::ConversionFunction conversionFunction)
+{
+    return registerExtParam (createParam (uid, name, shortName, label, range, defaultValue, st, std::move (conversionFunction)));
 }
 
 Parameter* Processor::getParameter (const juce::String& uid)

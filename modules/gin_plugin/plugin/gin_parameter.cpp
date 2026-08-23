@@ -2,7 +2,7 @@
 Parameter::Parameter (Processor& p, juce::String uid_, juce::String name_, juce::String shortName_,
                       juce::String label_, float minValue, float maxValue,
                       float intervalValue, float defaultValue_, float skewFactor,
-                      std::function<juce::String (const Parameter&, float)> textFunction_)
+                      ConversionFunction conversionFunction_)
   : juce::AudioPluginInstance::HostedParameter (p.versionHint),
     processor (p),
     range (minValue, maxValue, intervalValue, skewFactor),
@@ -12,13 +12,13 @@ Parameter::Parameter (Processor& p, juce::String uid_, juce::String name_, juce:
     name (name_),
     shortName (shortName_.isEmpty() ? name_ : shortName_),
     label (label_),
-    textFunction (textFunction_)
+    textConversionFunction (conversionFunction_)
 {
 }
 
 Parameter::Parameter (Processor& p, juce::String uid_, juce::String name_, juce::String shortName_,
                       juce::String label_, juce::NormalisableRange<float> range_, float defaultValue_,
-                      std::function<juce::String (const Parameter&, float)> textFunction_)
+                      ConversionFunction conversionFunction_)
   : juce::AudioPluginInstance::HostedParameter (p.versionHint),
     processor (p),
     range (range_),
@@ -28,7 +28,7 @@ Parameter::Parameter (Processor& p, juce::String uid_, juce::String name_, juce:
     name (name_),
     shortName (shortName_.isEmpty() ? name_ : shortName_),
     label (label_),
-    textFunction (textFunction_)
+    textConversionFunction (conversionFunction_)
 {
 }
 
@@ -164,19 +164,34 @@ int Parameter::getNumSteps() const
 
 juce::String Parameter::getText (float val, int /*maximumStringLength*/) const
 {
-    if (textFunction)
-        return textFunction (*this, range.snapToLegalValue (range.convertFrom0to1 (val)));
-    
     auto uv = range.snapToLegalValue (range.convertFrom0to1 (val));
-    
+
+    if (textConversionFunction)
+    {
+        auto res = textConversionFunction (*this, uv);
+        if (auto s = std::get_if<juce::String> (&res))
+            return *s;
+
+        jassertfalse; // conversion function must return a string when given a float
+    }
+
     if (juce::exactlyEqual (range.interval, 1.0f))
         return juce::String (int (uv));
-    
+
     return formatNumber (uv);
 }
 
 float Parameter::getValueForText (const juce::String& text) const
 {
+    if (textConversionFunction)
+    {
+        auto res = textConversionFunction (*this, text);
+        if (auto f = std::get_if<float> (&res))
+            return range.convertTo0to1 (*f);
+
+        jassertfalse; // conversion function must return a float when given a string
+    }
+
     return range.convertTo0to1 (text.getFloatValue());
 }
 

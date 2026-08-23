@@ -65,14 +65,19 @@ class Parameter : public juce::AudioPluginInstance::HostedParameter,
 public:
     using Ptr = Parameter*;
 
+    /** Bidirectional user value <-> text conversion. Called with a float it returns the
+        display text for that user value; called with a juce::String it returns the user
+        value for that text. */
+    using ConversionFunction = std::function<std::variant<float, juce::String> (const Parameter&, const std::variant<float, juce::String>&)>;
+
     Parameter (Processor&, juce::String uid, juce::String name, juce::String shortName, juce::String label,
                float minValue, float maxValue,
                float intervalValue, float defaultValue, float skewFactor = 1.0f,
-               std::function<juce::String (const Parameter&, float)> textFunction = nullptr);
+               ConversionFunction conversionFunction = nullptr);
 
     Parameter (Processor&, juce::String uid, juce::String name, juce::String shortName, juce::String label,
                juce::NormalisableRange<float> range, float defaultValue,
-               std::function<juce::String (const Parameter&, float)> textFunction = nullptr);
+               ConversionFunction conversionFunction = nullptr);
 
     juce::String getUid() const         { return uid;       }
     void setInternal (bool i)           { internal = i;     }
@@ -200,7 +205,7 @@ protected:
     const juce::String shortName;
     const juce::String label;
 
-    const std::function<juce::String (const Parameter&, float)> textFunction;
+    const ConversionFunction textConversionFunction;
 
     int userActionCount = 0;
 

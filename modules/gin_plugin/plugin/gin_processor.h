@@ -299,10 +299,20 @@ public:
                                  SmoothingType st,
                                  std::function<juce::String (const gin::Parameter&, float)> textFunction = nullptr);
 
+    gin::Parameter* addExtParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
+                                 juce::NormalisableRange<float> range, float defaultValue,
+                                 SmoothingType st,
+                                 gin::Parameter::ConversionFunction conversionFunction);
+
     gin::Parameter* addIntParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
                                  juce::NormalisableRange<float> range, float defaultValue,
                                  SmoothingType st,
                                  std::function<juce::String (const gin::Parameter&, float)> textFunction = nullptr);
+
+    gin::Parameter* addIntParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
+                                 juce::NormalisableRange<float> range, float defaultValue,
+                                 SmoothingType st,
+                                 gin::Parameter::ConversionFunction conversionFunction);
 
     gin::Parameter* getParameter (const juce::String& uid);
     float parameterValue (const juce::String& uid);
@@ -389,6 +399,14 @@ protected:
                                                  juce::NormalisableRange<float> range, float defaultValue,
                                                  SmoothingType st,
                                                  std::function<juce::String (const gin::Parameter&, float)> textFunction = nullptr);
+
+    std::unique_ptr<gin::Parameter> createParam (juce::String uid, juce::String name, juce::String shortName, juce::String label,
+                                                 juce::NormalisableRange<float> range, float defaultValue,
+                                                 SmoothingType st,
+                                                 gin::Parameter::ConversionFunction conversionFunction);
+
+    gin::Parameter* registerExtParam (std::unique_ptr<gin::Parameter> p);
+    gin::Parameter* registerIntParam (std::unique_ptr<gin::Parameter> p);
 
     juce::Array<gin::Parameter*> allParameters;
 
