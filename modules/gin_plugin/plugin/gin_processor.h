@@ -137,6 +137,10 @@ public:
     bool hasMidiLearn       = false;
     bool usePresetMetadata  = false;
 
+    /** CCs the plugin handles itself (sustain pedal, mod wheel, etc), so MIDI
+        learn should neither learn them nor apply mappings loaded for them. */
+    juce::Array<int> midiLearnIgnoredCCs;
+
     /** Whether ProcessorEditor builds its own TitleBar. Turn it off in a plugin
         that supplies its own header: the stock bar is not just hidden but never
         constructed, so it does not also stand up an update and a news checker
@@ -176,6 +180,13 @@ public:
     ProcessorOptions withMidiLearn() &&
     {
         hasMidiLearn = true;
+        return std::move (*this);
+    }
+
+    ProcessorOptions withMidiLearn (juce::Array<int> ccsToIgnore) &&
+    {
+        hasMidiLearn = true;
+        midiLearnIgnoredCCs = std::move (ccsToIgnore);
         return std::move (*this);
     }
 

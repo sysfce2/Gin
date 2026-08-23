@@ -70,7 +70,10 @@ void Processor::init()
     }
 
     if (processorOptions.hasMidiLearn)
+    {
         midiLearn = std::make_unique<MidiLearn> (*this);
+        midiLearn->setIgnoredCCs (processorOptions.midiLearnIgnoredCCs);
+    }
 
     loadAllPrograms();
 

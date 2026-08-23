@@ -16,6 +16,8 @@
     - Auto-detects relative (two's-complement) delta encoders during learn,
       applying increments instead of absolute values. Existing maps without the
       flag load as absolute.
+    - CCs the plugin handles itself (e.g. sustain pedal) can be excluded via
+      setIgnoredCCs / ProcessorOptions::withMidiLearn
     - State persistence via ValueTree
 
     Usage:
@@ -43,6 +45,12 @@ public:
     ~MidiLearn();
 
     void setSampleRate (double sr)      { sampleRate = sr; }
+
+    /** CCs the plugin handles itself (sustain pedal, mod wheel, etc). Ignored
+        CCs are never learned, never applied, and mappings saved for them are
+        dropped on load. */
+    void setIgnoredCCs (const juce::Array<int>& ccNumbers);
+    bool isIgnoredCC (int ccNumber) const;
 
     void setMapping (int ccNumber, gin::Parameter* param);
     void clearMapping (int ccNumber);
@@ -76,6 +84,7 @@ private:
 
     gin::Processor& processor;
     std::array<Item, 128> items;
+    std::array<bool, 128> ignoredCCs {};
     std::array<int, 128> currentCCValues {};
     std::array<int, 128> learnStartCCValues {};
     std::atomic<gin::Parameter*> learnParameter = nullptr;

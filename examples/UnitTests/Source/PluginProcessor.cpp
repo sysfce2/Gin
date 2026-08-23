@@ -61,6 +61,7 @@ using namespace gin;
 #include "../../../modules/gin_gui/utilities/gin_componentmap.test.h"
 #include "../../../modules/gin_gui/utilities/gin_layoutsupport.test.h"
 #include "../../../modules/gin_gui/utilities/gin_varianthelpers.test.h"
+#include "../../../modules/gin_plugin/plugin/gin_midilearn.test.h"
 #include "../../../modules/gin_plugin/plugin/gin_noteduration.test.h"
 #include "../../../modules/gin_plugin/plugin/gin_parameter.test.h"
 #include "../../../modules/gin_plugin/plugin/gin_modmatrix.test.h"

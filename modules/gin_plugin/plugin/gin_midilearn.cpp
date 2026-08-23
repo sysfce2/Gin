@@ -15,6 +15,34 @@ MidiLearn::~MidiLearn()
 }
 
 //==============================================================================
+void MidiLearn::setIgnoredCCs (const juce::Array<int>& ccNumbers)
+{
+    ignoredCCs.fill (false);
+
+    for (auto cc : ccNumbers)
+    {
+        jassert (cc >= 0 && cc < 128);
+        if (cc >= 0 && cc < 128)
+            ignoredCCs[(size_t) cc] = true;
+    }
+
+    // Drop any mappings already loaded for the ignored CCs
+    for (size_t i = 0; i < items.size(); i++)
+    {
+        if (ignoredCCs[i])
+        {
+            items[i].parameter.store (nullptr);
+            items[i].relative.store (false);
+        }
+    }
+}
+
+bool MidiLearn::isIgnoredCC (int ccNumber) const
+{
+    return ccNumber >= 0 && ccNumber < 128 && ignoredCCs[(size_t) ccNumber];
+}
+
+//==============================================================================
 void MidiLearn::setMapping (int ccNumber, gin::Parameter* param)
 {
     jassert (ccNumber >= 0 && ccNumber < 128);
@@ -118,6 +146,9 @@ void MidiLearn::processBlock (juce::MidiBuffer& midi, int numSamples)
         {
             const int ccNumber = msg.getControllerNumber();
             const int ccValue = msg.getControllerValue();
+
+            if (isIgnoredCC (ccNumber))
+                continue;
 
             // Track current CC values
             currentCCValues[(size_t) ccNumber] = ccValue;
@@ -232,7 +263,7 @@ void MidiLearn::loadState (const juce::ValueTree& vt)
             const juce::String paramUid = c.getProperty ("param").toString();
             const bool relative = (int) c.getProperty ("relative", 0) != 0; // absent = absolute
 
-            if (ccNumber >= 0 && ccNumber < 128 && isValidCC (ccNumber) && paramUid.isNotEmpty())
+            if (ccNumber >= 0 && ccNumber < 128 && isValidCC (ccNumber) && ! isIgnoredCC (ccNumber) && paramUid.isNotEmpty())
             {
                 if (auto param = processor.getParameter (paramUid))
                 {
@@ -295,7 +326,7 @@ void MidiLearn::loadFromSettings()
                             const juce::String paramUid = c.getProperty ("param").toString();
                             const bool relative = (int) c.getProperty ("relative", 0) != 0; // absent = absolute
 
-                            if (ccNumber >= 0 && ccNumber < 128 && isValidCC (ccNumber) && paramUid.isNotEmpty())
+                            if (ccNumber >= 0 && ccNumber < 128 && isValidCC (ccNumber) && ! isIgnoredCC (ccNumber) && paramUid.isNotEmpty())
                             {
                                 if (auto param = processor.getParameter (paramUid))
                                 {
