@@ -216,15 +216,23 @@ private:
 
         MockProcessorForParameterTests mockProc;
 
-        // Parameter with custom text function
-        auto textFunc = [] (const gin::Parameter&, float value) -> juce::String {
-            if (value < 0.33f) return "Low";
-            if (value < 0.67f) return "Mid";
-            return "High";
+        // Parameter with bidirectional value <-> text conversion
+        auto convFunc = [] (const gin::Parameter&, const std::variant<float, juce::String>& in) -> std::variant<float, juce::String> {
+            if (auto value = std::get_if<float> (&in))
+            {
+                if (*value < 0.33f) return juce::String ("Low");
+                if (*value < 0.67f) return juce::String ("Mid");
+                return juce::String ("High");
+            }
+
+            auto text = std::get<juce::String> (in);
+            if (text == "Low")  return 0.0f;
+            if (text == "Mid")  return 0.5f;
+            return 1.0f;
         };
 
         auto* param = new gin::Parameter (mockProc, "quality", "Quality", "Qual", "",
-                                          0.0f, 1.0f, 0.01f, 0.5f, 1.0f, textFunc);
+                                          0.0f, 1.0f, 0.01f, 0.5f, 1.0f, convFunc);
 
         param->setValue (0.2f);
         expect (param->getText (0.2f, 100).contains ("Low"), "Should show Low for 0.2");
@@ -234,6 +242,11 @@ private:
 
         param->setValue (0.8f);
         expect (param->getText (0.8f, 100).contains ("High"), "Should show High for 0.8");
+
+        // Text maps back to values through the same function
+        expectWithinAbsoluteError (param->getValueForText ("Low"), 0.0f, 0.001f, "Low should map to 0.0");
+        expectWithinAbsoluteError (param->getValueForText ("Mid"), 0.5f, 0.001f, "Mid should map to 0.5");
+        expectWithinAbsoluteError (param->getValueForText ("High"), 1.0f, 0.001f, "High should map to 1.0");
 
         delete param;
     }
