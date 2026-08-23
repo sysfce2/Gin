@@ -134,7 +134,7 @@ private:
 
         auto imageEnergy = [&] (bool dirtyMode)
         {
-            BitCrusher crusher;
+            BitCrusher crusher (1); // mono buffer below
             crusher.setSampleRate (sr);
             crusher.setParams (16.0f, holdHz, dirtyMode);
             crusher.reset(); // snap parameter smoothing
