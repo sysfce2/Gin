@@ -128,6 +128,9 @@ private:
     **Focus:**
     - `order` - Component focus order
     - `parentOrder` - Parent component focus order
+    - `focus` - Boolean, whether the component takes keyboard focus (is a tab stop)
+    - `clickFocus` - Boolean, whether a mouse click moves the keyboard focus to the component
+    - `focusContainer` - "none", "focus" or "keyboard" (see juce::Component::FocusContainerType)
 
     **Custom:**
     - `properties` - Object with custom properties to set on component

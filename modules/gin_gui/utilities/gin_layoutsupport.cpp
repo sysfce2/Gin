@@ -38,6 +38,9 @@ static const juce::Identifier kFactory      { "factory" };
 static const juce::Identifier kMacro        { "macro" };
 static const juce::Identifier kOrder        { "order" };
 static const juce::Identifier kParentOrder  { "parentOrder" };
+static const juce::Identifier kFocus        { "focus" };
+static const juce::Identifier kClickFocus   { "clickFocus" };
+static const juce::Identifier kFocusContainer { "focusContainer" };
 static const juce::Identifier kGrid         { "grid" };
 static const juce::Identifier kIf           { "if" };
 static const juce::Identifier kTitle        { "title" };
@@ -1026,6 +1029,24 @@ juce::Component* LayoutSupport::setPosition (const juce::String& currentPath,
         if (component.hasProperty (kTip))
             if (auto ttc = dynamic_cast<juce::SettableTooltipClient*> (curComponent))
                 ttc->setTooltip (component[kTip].toString());
+
+        //
+        // Keyboard focus
+        //
+        if (component.hasProperty (kFocus))
+            curComponent->setWantsKeyboardFocus (bool (component[kFocus]));
+
+        if (component.hasProperty (kClickFocus))
+            curComponent->setMouseClickGrabsKeyboardFocus (bool (component[kClickFocus]));
+
+        if (component.hasProperty (kFocusContainer))
+        {
+            const auto type = component[kFocusContainer].toString();
+
+            curComponent->setFocusContainerType (type == "keyboard" ? juce::Component::FocusContainerType::keyboardFocusContainer
+                                               : type == "focus"    ? juce::Component::FocusContainerType::focusContainer
+                                                                    : juce::Component::FocusContainerType::none);
+        }
 
         //
         // Handle properties
